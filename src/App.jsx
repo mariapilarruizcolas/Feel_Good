@@ -1,27 +1,24 @@
 import React from 'react';
+import { Switch, Route } from 'react-router-dom';
+import NavBarr from './components/NavBarr';
+import Home from './components/Home';
+import BienManger from './components/BienManger';
+import BienBouger from './components/BienBouger';
+import BienDansSaTete from './components/BienDansSaTete';
 
-import logo from './logo.png';
-import './App.css';
+/*import 'App.css';*/
 
 function App() {
   return (
-    <main className="rsw-container">
-      <div
-        className="rsw-item"
-        style={{
-          paddingBottom: '2rem',
-        }}>
-        <img src={logo} width="20%" alt="WCS logo" />
-      </div>
-      <div className="rsw-item">
-        <p>Welcome to your fresh, lightweight, React App ! &#127752;</p>
-      </div>
-      <div className="rsw-item">
-        <p>
-          Start in the <code>App.jsx</code> component !
-        </p>
-      </div>
-    </main>
+    <div>
+      <NavBarr />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/BienBouger" component={BienBouger} />
+        <Route exact path="/BienManger" component={BienManger} />
+        <Route exact path="/BienDansSaTete" component={BienDansSaTete} />
+      </Switch>
+    </div>
   );
 }
 
