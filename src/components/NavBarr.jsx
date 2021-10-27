@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import './NavBarr.css';
 
 /*import BienManger from './BienManger';
 import BienBouger from './BienBouger';
