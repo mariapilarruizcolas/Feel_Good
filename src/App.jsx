@@ -6,7 +6,6 @@ function App() {
   return (
     <main className="rsw-container">
       <FlipCard />
-      <h1>JE FELL GOOD</h1>
     </main>
   );
 }

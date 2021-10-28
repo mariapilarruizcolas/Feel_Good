@@ -24,7 +24,10 @@ function FlipCard() {
                 alt="sport2"
               ></img>
             </figure>
-            <button>Book</button>
+            <div className="btn">
+              <button>Se-Dépenser</button>
+              <button>Se-Relaxer</button>
+            </div>
           </div>
         </div>
       </div>
@@ -48,7 +51,10 @@ function FlipCard() {
                 alt="repas2"
               ></img>
             </figure>
-            <button>Zen</button>
+            <div className="btn">
+              <button>Idées Recettes</button>
+              <button>Idées Restaurants</button>
+            </div>
           </div>
         </div>
       </div>
@@ -61,7 +67,7 @@ function FlipCard() {
                 src="https://images.unsplash.com/photo-1502230831726-fe5549140034?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8emVuJTIweW9nYXxlbnwwfDF8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
                 alt="zen1"
               ></img>
-              <figcaption>Brohm Lake</figcaption>
+              <figcaption>Détente</figcaption>
             </figure>
           </div>
           <div className="card-back">
@@ -72,7 +78,10 @@ function FlipCard() {
                 alt="zen2"
               ></img>
             </figure>
-            <button>Book</button>
+            <div className="btn">
+              <button>Zen-Citation</button>
+              <button>Zen-Musique</button>
+            </div>
           </div>
         </div>
       </div>
