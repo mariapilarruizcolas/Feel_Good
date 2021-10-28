@@ -6,7 +6,7 @@ import BienManger from './components/BienManger';
 import BienBouger from './components/BienBouger';
 import BienDansSaTete from './components/BienDansSaTete';
 
-/*import 'App.css';*/
+import 'App.css';
 
 function App() {
   return (
