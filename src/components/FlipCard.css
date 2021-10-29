@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 /* body */
-body {
+.card-menu {
   min-height: 100vh;
   padding: 40px;
   display: flex;
