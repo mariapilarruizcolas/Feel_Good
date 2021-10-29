@@ -1,0 +1,28 @@
+.container {
+  position: fixed;
+  bottom: 0;
+  background-color: #96e6b3;
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  width: 100vw;
+}
+
+.container form {
+  position: fixed;
+  bottom: 2%;
+  margin-left: 2%;
+  display: flex;
+  flex-direction: column;
+}
+
+title {
+  margin-left: 2%;
+  margin-top: 2vw;
+  font-weight: bold;
+  font-size: xx-large;
+  display: flex;
+  justify-content: flex-start;
+  width: 70%;
+  height: 8vw;
+}
