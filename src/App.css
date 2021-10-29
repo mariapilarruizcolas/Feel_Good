@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster');
-h3,
-h4 {
+
+.title-home {
   text-align: center;
   color: #568259;
+  margin-top: 2rem;
 }

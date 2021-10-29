@@ -11,7 +11,6 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-
     <div className="App">
       <NavBarr />
       <Switch>
@@ -19,8 +18,10 @@ function App() {
         <Route exact path="/BienManger" components={BienManger} />
         <Route exact path="/BienDansSaTete" components={BienDansSaTete} />
       </Switch>
-       <h3>"Le plus grand secret pour le bonheur, c'est d'être bien avec soi."</h3>
-      <h4>Alors Feel Good Avec Nous</h4>
+      <div className="title-home">
+        <h3>"Le plus grand secret pour le bonheur, c'est d'être bien avec soi."</h3>
+        <h4>Alors Feel Good Avec Nous</h4>
+      </div>
       <FlipCard />
       <Sport />
       <Footer />

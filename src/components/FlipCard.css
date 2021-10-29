@@ -7,18 +7,16 @@
 }
 /* body card menu */
 body {
-  min-height: 100vh;
-  padding: 40px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
   background-color: hsla(120, 10%, 55%, 0.26);
-  font-family:'Lobster';
+  font-family: 'Lobster';
 }
 /* card menu*/
 .card-menu {
   display: flex;
+  min-height: 100vh;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 /* .flip-card-container */
 .flip-card-container {
