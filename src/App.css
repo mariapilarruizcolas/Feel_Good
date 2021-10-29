@@ -1,6 +1,4 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  width: 70vw;
+
+body {
+  background-color: #f1fffa;
 }

@@ -1,14 +1,16 @@
 import React from 'react';
+
+import Sport from './components/Sport';
 import Footer from './component/Footer';
 
-import './component/Footer.css';
 import './App.css';
 
 function App() {
   return (
-    <main>
+    <div className="App">
+      <Sport />
       <Footer />
-    </main>
+    </div>
   );
 }
 
