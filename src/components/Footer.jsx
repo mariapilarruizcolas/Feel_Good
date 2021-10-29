@@ -3,7 +3,7 @@ import './Footer.css';
 
 function Footer() {
   return (
-    <div className="container">
+    <div className="containerFooter">
       <title>Formulaire de contact</title>
       <form action="/action_page.php">
         <label htmlFor="fname">Nom & prénom</label>
