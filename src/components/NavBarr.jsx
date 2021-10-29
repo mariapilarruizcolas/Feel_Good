@@ -7,8 +7,8 @@ function NavBarr() {
       <div className="NavBarrDescktop">
         <ul className="Header">
           <li>
-            <NavLink activeClassName="active" to="/BienBouger">
-              Bien Bouger
+            <NavLink activeClassName="active" to="/Sport">
+              Bien bouger
             </NavLink>
           </li>
           <li>
@@ -26,8 +26,8 @@ function NavBarr() {
       <div className="NavBarrMobile">
         <ul className="Top">
           <li>
-            <NavLink activeClassName="active" to="/BienBouger">
-              <a href="./BienBouger" className="logo">
+            <NavLink activeClassName="active" to="/Sport">
+              <a href="./Sport" className="logo">
                 <img className="logo" src="../img/bienBouger.png" alt="Bien Bouger" />
               </a>
             </NavLink>
