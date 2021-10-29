@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Sport from './components/Sport';
-import Footer from './component/Footer';
+import Footer from './components/Footer';
 
 import './App.css';
 
