@@ -14,7 +14,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: hsla(120, 10%, 55%, 0.26);
-  font-family: 'Lato', 'Segoe Ui', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family:'Lobster';
 }
 /* card menu*/
 .card-menu {
