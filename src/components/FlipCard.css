@@ -162,7 +162,7 @@ button {
   font-family: inherit;
   font-weight: bold;
   color: var(--white-1);
-
+  margin: 20px;
   letter-spacing: 2px;
 
   padding: 9px 20px;
