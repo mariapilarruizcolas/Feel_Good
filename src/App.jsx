@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import FlipCard from './components/FlipCard';
 import './App.css';
@@ -19,11 +18,12 @@ function App() {
         <Route exact path="/BienDansSaTete" components={BienDansSaTete} />
       </Switch>
       <div className="title-home">
-        <h3>"Le plus grand secret pour le bonheur, c'est d'être bien avec soi."</h3>
+        <h3>Le plus grand secret pour le bonheur, c est d être bien avec soi.</h3>
         <h4>Alors Feel Good Avec Nous</h4>
       </div>
       <FlipCard />
       <Sport />
+      <BienManger />
       <Footer />
     </div>
   );

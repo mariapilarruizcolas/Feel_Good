@@ -1,9 +1,13 @@
-@media screen and (max-width: 600px) {
-  .Top {
+@media screen and (max-width: 640px) {
+  .Bottom {
     list-style-type: none;
     background-color: #96e6b3;
     color: #464e47;
     display: flex;
+    flex-direction: row;
+    position: fixed;
+    bottom: 0;
+    left: 0;
     justify-content: space-around;
     height: 10vh;
     width: 90vw;
@@ -20,7 +24,7 @@
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 640px) {
   .Header {
     list-style-type: none;
     background-color: #96e6b3;
@@ -39,7 +43,7 @@
   a:hover {
     font-size: 25px;
   }
-  .Top {
+  .Bottom {
     display: none;
   }
 }

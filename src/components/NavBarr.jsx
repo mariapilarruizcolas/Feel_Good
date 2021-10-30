@@ -24,7 +24,7 @@ function NavBarr() {
         </ul>
       </div>
       <div className="NavBarrMobile">
-        <ul className="Top">
+        <ul className="Bottom">
           <li>
             <NavLink activeClassName="active" to="/Sport">
               <a href="./Sport" className="logo">
