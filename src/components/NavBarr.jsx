@@ -7,6 +7,11 @@ function NavBarr() {
       <div className="NavBarrDescktop">
         <ul className="Header">
           <li>
+            <NavLink activeClassName="active" to="/">
+              Home
+            </NavLink>
+          </li>
+          <li>
             <NavLink activeClassName="active" to="/Sport">
               Bien bouger
             </NavLink>
