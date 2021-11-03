@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster');
+body {
+  background-color: hsla(120, 10%, 55%, 0.26);
+}
 
 .title-home {
   text-align: center;

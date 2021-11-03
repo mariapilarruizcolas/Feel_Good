@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <NavBarr />
       <div className="title-home">
-        <h2>Le plus grand secret pour le bonheur, c est d être bien avec soi.</h2>
+        <h2>Le plus grand secret pour le bonheur, c&apos;est d être bien avec soi.</h2>
         <h3>Alors Feel Good Avec Nous</h3>
       </div>
       <div>

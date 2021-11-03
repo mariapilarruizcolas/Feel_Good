@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import './FlipCard.css';
 
 function FlipCard() {
@@ -13,7 +14,7 @@ function FlipCard() {
                 src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTR8fGZpdG5lc3MlMjBlcXVpcG1lbnR8ZW58MHwxfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
                 alt="sport1"
               ></img>
-              <figcaption>Sport</figcaption>
+              <figcaption>Bien bouger</figcaption>
             </figure>
           </div>
           <div className="card-back">
@@ -25,8 +26,12 @@ function FlipCard() {
               ></img>
             </figure>
             <div className="btn">
-              <button>Se-Dépenser</button>
-              <button>Se-Relaxer</button>
+              <NavLink activeClassName="active" to="/Sport">
+                <button>Se Dépenser</button>
+              </NavLink>
+              <NavLink activeClassName="active" to="/Sport">
+                <button>Se Rélaxer</button>
+              </NavLink>
             </div>
           </div>
         </div>
@@ -40,7 +45,7 @@ function FlipCard() {
                 src="https://images.unsplash.com/photo-1505576399279-565b52d4ac71?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGNvb2tpbmd8ZW58MHwxfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
                 alt="repas1"
               ></img>
-              <figcaption>Repas</figcaption>
+              <figcaption>Bien Manger</figcaption>
             </figure>
           </div>
           <div className="card-back">
@@ -52,8 +57,12 @@ function FlipCard() {
               ></img>
             </figure>
             <div className="btn">
-              <button>Idées Recettes</button>
-              <button>Idées Restaurants</button>
+              <NavLink activeClassName="active" to="/BienManger">
+                <button>Idées Recettes</button>
+              </NavLink>
+              <NavLink activeClassName="active" to="/BienManger">
+                <button>Idées Frigo</button>
+              </NavLink>
             </div>
           </div>
         </div>
@@ -67,7 +76,7 @@ function FlipCard() {
                 src="https://images.unsplash.com/photo-1502230831726-fe5549140034?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8emVuJTIweW9nYXxlbnwwfDF8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
                 alt="zen1"
               ></img>
-              <figcaption>Détente</figcaption>
+              <figcaption>Bien dans sa tête</figcaption>
             </figure>
           </div>
           <div className="card-back">
@@ -79,8 +88,12 @@ function FlipCard() {
               ></img>
             </figure>
             <div className="btn">
-              <button>Zen-Citation</button>
-              <button>Zen-Musique</button>
+              <NavLink activeClassName="active" to="/BienDansSaTete">
+                <button>Zen-Citation</button>
+              </NavLink>
+              <NavLink activeClassName="active" to="BienDansSaTete">
+                <button>Zen-Musique</button>
+              </NavLink>
             </div>
           </div>
         </div>
