@@ -1,5 +1,5 @@
 import React from 'react';
-import './workout.css';
+import './Workout.css';
 
 function Workout({ title, imageSrc, body }) {
   return (

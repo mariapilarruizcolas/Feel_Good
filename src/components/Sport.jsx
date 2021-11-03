@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import './sport.css';
+import './Sport.css';
 import Workout from './Workout';
 
 function Sport() {
