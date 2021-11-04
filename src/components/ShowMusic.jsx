@@ -1,13 +1,13 @@
 import React from 'react';
-import './ShowCitations.css';
-function ShowCitations() {
+import './ShowMusic.css';
+function ShowMusic() {
   return (
     <div>
-      Citation 1 Citation 2 Citation 3
+      Musique 1 Musique 2 Musique 3
       <div>
         <img src="./img/feelZen.png" alt="Feel Zen Feel Good" />
       </div>
     </div>
   );
 }
-export default ShowCitations;
+export default ShowMusic;

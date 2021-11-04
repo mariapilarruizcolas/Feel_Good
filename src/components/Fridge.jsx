@@ -1,6 +1,6 @@
 import React from 'react';
-import './Frigo.css';
-function Frigo() {
+import './Fridge.css';
+function Fridge() {
   return (
     <div>
       <h1>Restes du frigo </h1>
@@ -16,4 +16,4 @@ function Frigo() {
     </div>
   );
 }
-export default Frigo;
+export default Fridge;

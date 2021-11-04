@@ -1,6 +1,6 @@
 import React from 'react';
-import './ShowRecipes.css';
-function ShowRecipes() {
+import './ShowRecipesFridge.css';
+function ShowRecipesFridge() {
   return (
     <div>
       Recette 1 Recette 2 Recette 3
@@ -10,4 +10,5 @@ function ShowRecipes() {
     </div>
   );
 }
-export default ShowRecipes;
+
+export default ShowRecipesFridge;
