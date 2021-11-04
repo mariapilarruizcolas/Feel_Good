@@ -57,10 +57,10 @@ function FlipCard() {
               ></img>
             </figure>
             <div className="btn">
-              <NavLink activeClassName="active" to="/BienManger">
+              <NavLink activeClassName="active" to="/FeelGoodRecipes">
                 <button>Idées Recettes</button>
               </NavLink>
-              <NavLink activeClassName="active" to="/BienManger">
+              <NavLink activeClassName="active" to="/FeelGoodRecipes">
                 <button>Idées Frigo</button>
               </NavLink>
             </div>
@@ -88,10 +88,10 @@ function FlipCard() {
               ></img>
             </figure>
             <div className="btn">
-              <NavLink activeClassName="active" to="/BienDansSaTete">
+              <NavLink activeClassName="active" to="/FeelZen">
                 <button>Zen-Citation</button>
               </NavLink>
-              <NavLink activeClassName="active" to="BienDansSaTete">
+              <NavLink activeClassName="active" to="/FeelZen">
                 <button>Zen-Musique</button>
               </NavLink>
             </div>

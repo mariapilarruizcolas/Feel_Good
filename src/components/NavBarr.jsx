@@ -17,12 +17,12 @@ function NavBarr() {
             </NavLink>
           </li>
           <li>
-            <NavLink activeClassName="active" to="/BienManger">
+            <NavLink activeClassName="active" to="/FeelGoodRecipes">
               Bien Manger
             </NavLink>
           </li>
           <li>
-            <NavLink activeClassName="active" to="/BienDansSaTete">
+            <NavLink activeClassName="active" to="/FeelZen">
               Bien dans sa tête
             </NavLink>
           </li>
@@ -33,21 +33,21 @@ function NavBarr() {
           <li>
             <NavLink activeClassName="active" to="/Sport">
               <a href="./Sport" className="logo">
-                <img className="logo" src="../img/bienBouger.png" alt="Bien Bouger" />
+                <img className="logo" src="../img/Sport.png" alt="Bien Bouger" />
               </a>
             </NavLink>
           </li>
           <li>
-            <NavLink activeClassName="active" to="/BienManger">
-              <a href="./BienManger.jsx" className="logo">
-                <img className="logo" src="../img/bienManger.png" alt="Bien Manger" />
+            <NavLink activeClassName="active" to="/FeelGoodRecipes">
+              <a href="./FeelGoodRecipes.jsx" className="logo">
+                <img className="logo" src="../img/feelGoodRecipes.png" alt="Feel Good Recipes" />
               </a>
             </NavLink>
           </li>
           <li>
-            <NavLink activeClassName="active" to="/BienDansSaTete">
-              <a href="./BienDansSaTete.jsx" className="logo">
-                <img className="logo" src="../img/bienDansSaTete.png" alt="Bien Dans Sa Tete" />
+            <NavLink activeClassName="active" to="/FeelZen">
+              <a href="./FeelZen.jsx" className="logo">
+                <img className="logo" src="../img/feelZen.png" alt="Feel Zen Feel Good" />
               </a>
             </NavLink>
           </li>

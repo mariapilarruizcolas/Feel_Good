@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
-import './Sport.css';
 import Workout from './Workout';
+import './Sport.css';
 
 function Sport() {
   const [toggleState, setToggleState] = useState(1);
@@ -39,7 +39,7 @@ function Sport() {
             imageSrc="../../img/yoga.jpeg"
             body="Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,"
           />
-          <Workout title="Pilate" imageSrc="../../img/pilate.jpeg" body="Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet" />
+          <Workout title="Pilates" imageSrc="../../img/pilates.jpeg" body="Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet" />
         </div>
       </div>
     </div>

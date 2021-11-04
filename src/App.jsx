@@ -1,19 +1,19 @@
 import React from 'react';
-import './App.css';
 import { Switch, Route } from 'react-router-dom';
 import NavBarr from './components/NavBarr';
-import BienManger from './components/BienManger';
+import FeelGoodRecipes from './components/FeelGoodRecipes';
 import Sport from './components/Sport';
-import BienDansSaTete from './components/BienDansSaTete';
+import FeelZen from './components/FeelZen';
 import Footer from './components/Footer';
 import Home from './components/Home';
+import './App.css';
 
 function App() {
   return (
     <div className="App">
       <NavBarr />
       <div className="title-home">
-        <h2>Le plus grand secret pour le bonheur, c&apos;est d être bien avec soi.</h2>
+        <h2>Le plus grand secret pour le bonheur, c&apos;est d&apos;être bien avec soi.</h2>
         <h3>Alors Feel Good Avec Nous</h3>
       </div>
       <div>
@@ -21,8 +21,8 @@ function App() {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/Sport" component={Sport} />
-            <Route path="/BienManger" component={BienManger} />
-            <Route path="/BienDansSaTete" component={BienDansSaTete} />
+            <Route path="/FeelGoodRecipes" component={FeelGoodRecipes} />
+            <Route path="/FeelZen" component={FeelZen} />
           </Switch>
         </div>
         <Footer />

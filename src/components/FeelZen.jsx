@@ -1,10 +1,10 @@
-import './BienDansSaTete.css';
 import React from 'react';
 import { useState } from 'react';
-import ShowMusique from './ShowMusique';
-import ShowCitations from './ShowCitations';
+import ShowMusic from './ShowMusic';
+import ShowQuotes from './ShowQuotes';
+import './FeelZen.css';
 
-function BienDansSaTete() {
+function FeelZen() {
   const [toggleState, setToggleState] = useState(1);
   const toggleTab = (index) => {
     setToggleState(index);
@@ -21,14 +21,14 @@ function BienDansSaTete() {
       </div>
       <div className="content-tabs">
         <div className={toggleState === 1 ? 'content  active-content' : 'content'}>
-          <div className="Musique">
-            <ShowMusique />
+          <div className="Music">
+            <ShowMusic />
           </div>
         </div>
 
         <div className={toggleState === 2 ? 'content  active-content' : 'content'}>
-          <div className="Citations">
-            <ShowCitations />
+          <div className="Quotes">
+            <ShowQuotes />
           </div>
         </div>
       </div>
@@ -36,4 +36,4 @@ function BienDansSaTete() {
   );
 }
 
-export default BienDansSaTete;
+export default FeelZen;
