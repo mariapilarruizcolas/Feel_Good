@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
-import './Sport.css';
 import Workout from './Workout';
+import './Sport.css';
 
 function Sport() {
   const [toggleState, setToggleState] = useState(1);

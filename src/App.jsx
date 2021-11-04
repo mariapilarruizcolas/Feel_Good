@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import { Switch, Route } from 'react-router-dom';
 import NavBarr from './components/NavBarr';
 import FeelGoodRecipes from './components/FeelGoodRecipes';
@@ -7,6 +6,7 @@ import Sport from './components/Sport';
 import FeelZen from './components/FeelZen';
 import Footer from './components/Footer';
 import Home from './components/Home';
+import './App.css';
 
 function App() {
   return (

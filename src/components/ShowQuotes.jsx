@@ -1,6 +1,6 @@
 import React from 'react';
-import './ShowCitations.css';
-function ShowCitations() {
+import './ShowQuotes.css';
+function ShowQuotes() {
   return (
     <div>
       Citation 1 Citation 2 Citation 3
@@ -10,4 +10,4 @@ function ShowCitations() {
     </div>
   );
 }
-export default ShowCitations;
+export default ShowQuotes;

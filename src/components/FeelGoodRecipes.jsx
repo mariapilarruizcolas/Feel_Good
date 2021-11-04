@@ -1,10 +1,10 @@
 import React from 'react';
 import { useState } from 'react';
-import './FeelGoodRecipes.css';
 import Recipes from './Recipes';
 import ShowRecipes from './ShowRecipes';
 import Fridge from './Fridge';
 import ShowRecipesFridge from './ShowRecipesFridge';
+import './FeelGoodRecipes.css';
 
 function FeelGoodRecipes() {
   const [toggleState, setToggleState] = useState(1);

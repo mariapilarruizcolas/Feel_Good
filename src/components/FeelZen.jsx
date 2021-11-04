@@ -1,8 +1,8 @@
-import './FeelZen.css';
 import React from 'react';
 import { useState } from 'react';
 import ShowMusic from './ShowMusic';
-import ShowCitations from './ShowCitations';
+import ShowQuotes from './ShowQuotes';
+import './FeelZen.css';
 
 function FeelZen() {
   const [toggleState, setToggleState] = useState(1);
@@ -27,8 +27,8 @@ function FeelZen() {
         </div>
 
         <div className={toggleState === 2 ? 'content  active-content' : 'content'}>
-          <div className="Citations">
-            <ShowCitations />
+          <div className="Quotes">
+            <ShowQuotes />
           </div>
         </div>
       </div>
