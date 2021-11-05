@@ -13,7 +13,7 @@ body {
 /* card menu*/
 .card-menu {
   display: flex;
-  min-height: 100vh;
+  min-height: 80vh;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
