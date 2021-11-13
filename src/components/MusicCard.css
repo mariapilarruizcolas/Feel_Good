@@ -1,4 +1,8 @@
-.card-container {
+.card-container-music {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 250px;
   overflow: hidden;
   box-shadow: 0 0 15px -5px;
@@ -6,7 +10,9 @@
   animation: ease-in;
   height: 55vh;
   margin-top: 20px;
+  margin: 20px;
   padding-top: 0.7rem;
+
   background-color: #96e6b3;
 }
 .card-container:hover {
@@ -20,6 +26,7 @@
   margin-right: auto;
   overflow: hidden;
   height: 200px;
+  width: 200px;
 
   background-size: cover;
 }
@@ -28,15 +35,12 @@
   margin: 0.5rem;
   margin-top: 0.5rem;
 }
-h3,
+h2,
 p {
   margin: 0;
   padding: 0;
 }
-.workout-desc {
-  margin-bottom: 20px;
-  font-size: 0.8rem;
-}
+
 .card-title {
   margin-bottom: 0.5rem;
   justify-content: center;
@@ -72,7 +76,14 @@ p {
   height: 250px;
 }
 .likeButton {
-  border-radius: 0.5rem;
+  font-size: 15px;
   border: 0.5rem;
   text-align: center;
+  background: #f1fffa;
+  color: #568259;
+  font-weight: bold;
+  margin-top: 5%;
+  padding: 8px 22px;
+  width: auto;
+  transform: scale(1);
 }
