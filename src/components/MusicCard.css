@@ -1,0 +1,78 @@
+.card-container {
+  width: 250px;
+  overflow: hidden;
+  box-shadow: 0 0 15px -5px;
+  transition: 0.3s;
+  animation: ease-in;
+  height: 55vh;
+  margin-top: 20px;
+  padding-top: 0.7rem;
+  background-color: #96e6b3;
+}
+.card-container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px 0;
+}
+
+.image-container img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  height: 200px;
+
+  background-size: cover;
+}
+
+.card-content {
+  margin: 0.5rem;
+  margin-top: 0.5rem;
+}
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+.workout-desc {
+  margin-bottom: 20px;
+  font-size: 0.8rem;
+}
+.card-title {
+  margin-bottom: 0.5rem;
+  justify-content: center;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  color: #464e47;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn button {
+  padding: 0.5rem;
+  background-color: #f1fffa;
+  border: none;
+  transition: 0.2s;
+  border-radius: 3px;
+}
+.btn button:hover {
+  background: #f1fffa;
+  transform: scale(1.07);
+}
+
+.image-container {
+  background-color: #96e6b3;
+  display: flex;
+  margin: 0;
+  align-items: center;
+  width: 250px;
+  height: 250px;
+}
+.likeButton {
+  border-radius: 0.5rem;
+  border: 0.5rem;
+  text-align: center;
+}
