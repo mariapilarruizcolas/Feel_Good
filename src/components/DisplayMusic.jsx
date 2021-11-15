@@ -7,7 +7,6 @@ function DisplayMusic({ musicItems }) {
       {musicItems.map((music) => (
         <MusicCard key={music.key} title={music.title} name={music.name} link={music.link} image={music.image} />
       ))}
-      ;
     </div>
   );
 }

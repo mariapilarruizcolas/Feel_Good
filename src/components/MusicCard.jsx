@@ -22,4 +22,3 @@ function MusicCard(props) {
 }
 
 export default MusicCard;
-//onClick='window.open({props.link},'_blank')'
