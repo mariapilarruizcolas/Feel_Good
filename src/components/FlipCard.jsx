@@ -26,10 +26,10 @@ function FlipCard() {
               ></img>
             </figure>
             <div className="btn">
-              <NavLink activeClassName="active" to="/Sport">
+              <NavLink activeClassName="active" to="/Sport/1">
                 <button>Se Dépenser</button>
               </NavLink>
-              <NavLink activeClassName="active" to="/Sport">
+              <NavLink activeClassName="active" to="/Sport/2">
                 <button>Se Rélaxer</button>
               </NavLink>
             </div>
