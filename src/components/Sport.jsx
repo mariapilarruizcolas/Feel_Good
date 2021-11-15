@@ -1,20 +1,24 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Workout from './Workout';
 import './Sport.css';
+import { useParams } from 'react-router';
 
 function Sport() {
-  const [toggleState, setToggleState] = useState(1);
-  const toggleTab = (index) => {
-    setToggleState(index);
-  };
+  const { id } = useParams();
+  const [toggleState, setToggleState] = useState();
+
+  useEffect(() => {
+    setToggleState(Number(id));
+  }, [id]);
+
   return (
     <div className="container">
       <div className="bloc-tabs">
-        <button className={toggleState === 1 ? 'tabs active-tabs' : 'tabs'} onClick={() => toggleTab(1)}>
+        <button className={toggleState === 1 ? 'tabs active-tabs' : 'tabs'} onClick={() => setToggleState(1)}>
           Se Dépenser
         </button>
-        <button className={toggleState === 2 ? 'tabs active-tabs' : 'tabs'} onClick={() => toggleTab(2)}>
+        <button className={toggleState === 2 ? 'tabs active-tabs' : 'tabs'} onClick={() => setToggleState(2)}>
           Se Relaxer
         </button>
       </div>

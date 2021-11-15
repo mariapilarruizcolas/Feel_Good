@@ -5,7 +5,7 @@ function Workout({ title, imageSrc, body }) {
   return (
     <div className="card-container">
       <div className="image-container">
-        <img src={imageSrc} alt="" />
+        <img src={imageSrc} alt={title} />
       </div>
       <div className="card-content">
         <div className="card-title">

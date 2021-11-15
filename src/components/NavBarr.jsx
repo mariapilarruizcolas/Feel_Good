@@ -12,7 +12,7 @@ function NavBarr() {
             </NavLink>
           </li>
           <li>
-            <NavLink activeClassName="active" to="/Sport">
+            <NavLink activeClassName="active" to="/Sport/1">
               Bien bouger
             </NavLink>
           </li>
@@ -22,7 +22,7 @@ function NavBarr() {
             </NavLink>
           </li>
           <li>
-            <NavLink activeClassName="active" to="/FeelZen">
+            <NavLink activeClassName="active" to="/FeelZen/3">
               Bien dans sa tête
             </NavLink>
           </li>

@@ -85,11 +85,11 @@ function FlipCard() {
               ></img>
             </figure>
             <div className="btn">
-              <NavLink activeClassName="active" to="/FeelZen">
-                <button>Zen-Citation</button>
+              <NavLink activeClassName="active" to="/FeelZen/3">
+                <button>Zen Musique</button>
               </NavLink>
-              <NavLink activeClassName="active" to="/FeelZen">
-                <button>Zen-Musique</button>
+              <NavLink activeClassName="active" to="/FeelZen/4">
+                <button>Zen Citation</button>
               </NavLink>
             </div>
           </div>
