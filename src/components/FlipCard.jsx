@@ -60,9 +60,6 @@ function FlipCard() {
               <NavLink activeClassName="active" to="/FeelGoodRecipes">
                 <button>Idées Recettes</button>
               </NavLink>
-              <NavLink activeClassName="active" to="/FeelGoodRecipes">
-                <button>Idées Frigo</button>
-              </NavLink>
             </div>
           </div>
         </div>

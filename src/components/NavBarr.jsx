@@ -32,23 +32,17 @@ function NavBarr() {
         <ul className="Bottom">
           <li>
             <NavLink activeClassName="active" to="/Sport">
-              <a href="./Sport" className="logo">
-                <img className="logo" src="../img/Sport.png" alt="Bien Bouger" />
-              </a>
+              <img className="logo" src="../img/Sport.png" alt="Bien Bouger" />
             </NavLink>
           </li>
           <li>
             <NavLink activeClassName="active" to="/FeelGoodRecipes">
-              <a href="./FeelGoodRecipes.jsx" className="logo">
-                <img className="logo" src="../img/feelGoodRecipes.png" alt="Feel Good Recipes" />
-              </a>
+              <img className="logo" src="../img/feelGoodRecipes.png" alt="Feel Good Recipes" />
             </NavLink>
           </li>
           <li>
             <NavLink activeClassName="active" to="/FeelZen">
-              <a href="./FeelZen.jsx" className="logo">
-                <img className="logo" src="../img/feelZen.png" alt="Feel Zen Feel Good" />
-              </a>
+              <img className="logo" src="../img/feelZen.png" alt="Feel Zen Feel Good" />
             </NavLink>
           </li>
         </ul>
