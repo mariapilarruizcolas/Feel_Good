@@ -1,8 +1,4 @@
 .card-container-music {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 250px;
   overflow: hidden;
   box-shadow: 0 0 15px -5px;
@@ -23,7 +19,7 @@
   overflow: hidden;
   height: 200px;
   width: 200px;
-
+  margin-top: 30px;
   background-size: cover;
 }
 
@@ -42,14 +38,11 @@ p {
 
 .card-title {
   margin-bottom: 1.5rem;
-  justify-content: center;
 }
 
 .image-container {
   background-color: #96e6b3;
-  display: flex;
   margin: 0;
-  align-items: center;
   width: 250px;
   height: 250px;
 }
@@ -57,13 +50,10 @@ p {
   font-size: 20px;
   border: 2rem;
   border-radius: 5%;
-
-  align-items: center;
   background: #f1fffa;
   color: #568259;
   font-weight: bold;
   margin-top: 15%;
-
   width: auto;
   transform: scale(1);
 }

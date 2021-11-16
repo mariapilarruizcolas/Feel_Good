@@ -1,6 +1,5 @@
 import React from 'react';
 import './MusicCard.css';
-
 function MusicCard(props) {
   return (
     <div className="card-container-music">
@@ -12,9 +11,11 @@ function MusicCard(props) {
           <h2>{props.title}</h2>
         </div>
         <div className="card-body">
-          <a className="likeButton" href={props.link} target="_blank" rel="noreferrer">
-            {props.name}
-          </a>
+          <div>
+            <a className="likeButton" href={props.link} target="_blank" rel="noreferrer">
+              {props.name}
+            </a>
+          </div>
         </div>
       </div>
     </div>

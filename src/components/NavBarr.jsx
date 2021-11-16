@@ -17,7 +17,7 @@ function NavBarr() {
             </NavLink>
           </li>
           <li>
-            <NavLink activeClassName="active" to="/FeelGoodRecipes">
+            <NavLink activeClassName="active" to="/FeelGoodRecipes/5">
               Bien Manger
             </NavLink>
           </li>

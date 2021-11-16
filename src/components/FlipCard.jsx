@@ -57,8 +57,13 @@ function FlipCard() {
               ></img>
             </figure>
             <div className="btn">
-              <NavLink activeClassName="active" to="/FeelGoodRecipes">
+              <NavLink activeClassName="active" to="/FeelGoodRecipes/5">
                 <button>Idées Recettes</button>
+              </NavLink>
+            </div>
+            <div className="btn">
+              <NavLink activeClassName="active" to="/FeelGoodRecipes/6">
+                <button>Idées Restaurants</button>
               </NavLink>
             </div>
           </div>

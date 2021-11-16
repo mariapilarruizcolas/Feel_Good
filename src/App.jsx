@@ -21,7 +21,7 @@ function App() {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/Sport/:id" component={Sport} />
-            <Route path="/FeelGoodRecipes" component={FeelGoodRecipes} />
+            <Route path="/FeelGoodRecipes/:id" component={FeelGoodRecipes} />
             <Route path="/FeelZen/:id" component={FeelZen} />
           </Switch>
         </div>
