@@ -4,10 +4,11 @@
   box-shadow: 0 0 15px -5px;
   transition: 0.3s;
   animation: ease-in;
-  height: 55vh;
   margin-top: 20px;
+  margin: 20px;
   padding-top: 0.7rem;
-  background-color: #568259;
+  background-color: #96e6b3;
+  background-size: cover;
 }
 .card-container:hover {
   transform: scale(1.02);
@@ -20,21 +21,28 @@
   margin-right: auto;
   overflow: hidden;
   height: 200px;
+  width: 200px;
+  margin-top: 30px;
   background-size: cover;
+  background-color: #f1fffa;
 }
 
 .card-content {
-  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.5rem;
   margin-top: 0.5rem;
 }
-h3,
-p {
-  margin: 0;
-  padding: 0;
+
+h3 {
+  text-align: center;
 }
+
 .workout-desc {
   margin-bottom: 20px;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
+  word-break: normal;
 }
 .card-title {
   margin-bottom: 0.5rem;
@@ -47,6 +55,8 @@ p {
   color: #464e47;
   text-decoration: none;
   font-weight: bold;
+  align-items: flex-end;
+  margin: 30px;
 }
 
 .btn button {
@@ -62,5 +72,80 @@ p {
 }
 
 .image-container {
-  background-color: white;
+  background-color: #96e6b3;
+  margin: 0;
+  width: 250px;
+  height: 250px;
+}
+
+.closeModal {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 6px;
+  margin-right: 10px;
+  height: 2rem;
+  width: 2rem;
+  font-size: 1.4em;
+  color: #f1fffa;
+  background-color: darkcyan;
+}
+
+ul li {
+  list-style: none;
+  font-size: 1.3rem;
+}
+
+.descExo {
+  display: flex;
+}
+.descriptionExercise {
+  display: flex;
+  font-size: 0.8rem;
+  padding: 1rem;
+  width: 45%;
+  align-self: center;
+}
+.imgExo {
+  width: 27.5%;
+  height: 40vh;
+  margin: 5vh 0;
+  padding: 10px;
+  background-size: cover;
+}
+
+@media screen and (min-width: 640px) and (max-width: 850px) {
+  .image-container img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .descExo {
+    display: block;
+  }
+  .descriptionExercise {
+    font-size: 0.8rem;
+    padding: 1rem;
+    width: 100%;
+  }
+  .imgExo {
+    background-size: cover;
+    margin: 2rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .descExo {
+    display: block;
+  }
+
+  .descriptionExercise {
+    font-size: 0.8rem;
+    padding: 1rem;
+    width: 100%;
+  }
+  .imgExo {
+    background-size: cover;
+    width: 100%;
+  }
 }

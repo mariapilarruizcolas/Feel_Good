@@ -1,7 +1,8 @@
-import React from 'react';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import './sport.css';
 import Workout from './Workout';
+import Yoga from './Yoga';
+import Pilates from './Pilates';
 
 function Sport() {
   const [toggleState, setToggleState] = useState(1);
@@ -20,26 +21,22 @@ function Sport() {
       </div>
       <div className="content-tabs">
         <div className={toggleState === 1 ? 'content  active-content' : 'content'}>
-          <Workout
-            title="Arms Workout"
-            imageSrc="../../img/arms.jpeg"
-            body="Améliorez votre force des bras et votre force avec des exercices spécifiques"
-          />
-          <Workout title="Chest Workout" imageSrc="../../img/chest.jpeg" body="Programme de renforcement des muscles pectoraux, exercices variés" />
-          <Workout
-            title="Abs Workout"
-            imageSrc="../../img/abs.jpeg"
-            body=" Entaînez efficacement vos muscles abdominaux et faites sortir la tablette"
-          />
+          <Workout title="Arms" imageSrc="../../img/arms.jpeg" />
+          <Workout title="Chest" imageSrc="../../img/chest.jpeg" />
+          <Workout title="Abs" imageSrc="../../img/abs.jpeg" />
+          <Workout title="Shoulders" imageSrc="../../img/shoulders.jpeg" />
+          <Workout title="Legs" imageSrc="../../img/quadri.jpeg" />
+          <Workout title="Back" imageSrc="../../img/back.jpeg" />
         </div>
 
-        <div className={toggleState === 2 ? 'content  active-content' : 'content'}>
-          <Workout
+        <div className={toggleState === 2 ? 'content active-content' : 'content'}>
+          <Yoga
+            className="compo-yoga"
             title="Yoga"
-            imageSrc="../../img/yoga.jpeg"
-            body="Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,"
+            imageUrl="../img/yoga.jpeg"
+            body="Prenez le temps d'apprendre à connaître votre cotre corps et votre esprit."
           />
-          <Workout title="Pilate" imageSrc="../../img/pilate.jpeg" body="Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet" />
+          <Pilates className="compo-pilates" title="Pilates" imageUrl="../img/pilates.jpeg" body="Lorem ipsum dolor sit amet, consect" />
         </div>
       </div>
     </div>

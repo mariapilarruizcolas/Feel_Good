@@ -1,0 +1,59 @@
+.container-footer {
+  margin-top: 1rem;
+  border: 3px solid #ccfccb;
+  width: 92%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-footer form {
+  margin-left: 2%;
+  display: flex;
+  flex-direction: column;
+}
+
+title {
+  font-weight: bold;
+  font-size: xx-large;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+}
+
+#btn-submit {
+  margin: 1rem auto;
+  padding: 5px;
+  background-color: #ccfccb;
+  border-radius: 5px;
+}
+#emailAddress {
+  margin-left: 4rem;
+}
+
+.contact_form {
+  text-align: left;
+}
+.row {
+  margin-top: 1rem;
+}
+#message {
+  margin-top: 1.5rem;
+}
+
+@media screen and (min-width: 640px) and (max-width: 850px) {
+  .container-footer {
+    border: 3px solid #ccfccb;
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .container-footer {
+    border: 3px solid #ccfccb;
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
