@@ -1,5 +1,6 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
+
 import NavBarr from './components/NavBarr';
 import FeelGoodRecipes from './components/FeelGoodRecipes';
 import Sport from './components/Sport';
