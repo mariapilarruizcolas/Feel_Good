@@ -16,5 +16,10 @@
 
 .quotequote {
   width: 50%;
-  height: 15%;
+  height: 25%;
+  margin: 3rem auto;
+}
+.quote {
+  margin: 1.8rem 0;
+  font-size: 1.3rem;
 }
