@@ -3,19 +3,29 @@ import './Footer.css';
 
 function Footer() {
   return (
-    <div className="containerFooter">
-      <title>Formulaire de contact</title>
-      <form action="/action_page.php">
-        <label htmlFor="fname">Nom &amp; prénom</label>
-        <input type="text" id="fname" name="firstname" placeholder="Votre nom et prénom"></input>
+    <div className="container-footer">
+      <form className="contact_form">
+        <div className="row">
+          <title>Contactez-Nous </title>
+          <label htmlFor="fname">Nom & prénom : </label>
+          <input type="text" id="fname" name="firstname" placeholder="Votre nom et prénom"></input>
+          <br />
+        </div>
+        <div className="row">
+          <label htmlFor="emailAddress">Email : </label>
+          <input id="emailAddress" type="email" name="email" placeholder="Votre email"></input>
+          <br />
+        </div>
+        <div className="row">
+          <label htmlFor="sujet" className="msg">
+            Message
+          </label>
+          <br />
+          <textarea id="message" className="input" name="message" rows="7" cols="30"></textarea>
+          <br />
+        </div>
 
-        <label htmlFor="emailAddress">Email</label>
-        <input id="emailAddress" type="email" name="email" placeholder="Votre email"></input>
-
-        <label htmlFor="sujet">Message</label>
-        <input type="text" id="sujet" name="sujet" placeholder="L'objet de votre message"></input>
-
-        <input type="submit" value="Envoyer"></input>
+        <input id="btn-submit" type="submit" value="Send email" />
       </form>
     </div>
   );
