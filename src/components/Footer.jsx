@@ -6,7 +6,7 @@ function Footer() {
     <div className="containerFooter">
       <title>Formulaire de contact</title>
       <form action="/action_page.php">
-        <label htmlFor="fname">Nom & prénom</label>
+        <label htmlFor="fname">Nom &amp; prénom</label>
         <input type="text" id="fname" name="firstname" placeholder="Votre nom et prénom"></input>
 
         <label htmlFor="emailAddress">Email</label>
