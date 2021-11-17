@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import ShowRecipes from './ShowRecipes';
+import Recipes from './Recipes';
 import ShowRestaurants from './ShowRestaurants';
 import { useParams } from 'react-router';
 import './FeelGoodRecipes.css';
@@ -25,7 +25,7 @@ function FeelGoodRecipes() {
       <div className="content-tabs">
         <div className={toggleState === 5 ? 'content  active-content' : 'content'}>
           <div className="Recipes">
-            <ShowRecipes />
+            <Recipes />
           </div>
         </div>
 
