@@ -2,7 +2,6 @@ import React from 'react';
 import { useEffect, useState } from 'react/cjs/react.development';
 import RecipesSearch from './RecipesSearch';
 import './Recipes.css';
-import MyIngredients from './MyIngredients';
 import RecipeModal from './RecipeModal';
 
 //import axios from axios;
@@ -36,12 +35,6 @@ function Recipes() {
     const data = await response.json();
     setRecipes(data.hits);
   };
-  // axios(`https://api.edamam.com/search?q=${ingredients}&app_id=${APP_ID}&app_key=${API_KEY}`);
-  // .then(response =>{
-  //    response.json
-  // }
-
-  // const for search bar with state  onChange
   const updateSearch = (e) => {
     setSearch(e.target.value);
   };
@@ -62,19 +55,10 @@ function Recipes() {
       </form>
       <div className="recipesSearch">
         {recipes.map((recipe) => (
-          <RecipesSearch
-            key={recipe.recipe.label}
-            label={recipe.recipe.label}
-            image={recipe.recipe.image}
-            //calories={recipe.recipe.calories}
-            //ingredients={recipe.recipe.ingredients}
-            //cuisineType={recipe.recipe.cuisineType}
-            handleModal={handleModal}
-          />
+          <RecipesSearch key={recipe.recipe.label} label={recipe.recipe.label} image={recipe.recipe.image} handleModal={handleModal} />
         ))}
         {dataModal && <RecipeModal recipe={dataModal} close={handClose} />}
       </div>
-      <MyIngredients />
     </div>
   );
 }

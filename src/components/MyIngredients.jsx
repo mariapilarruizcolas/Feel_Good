@@ -1,11 +1,24 @@
 import React from 'react';
 import { useEffect, useState } from 'react/cjs/react.development';
 import MyIngredientsSearch from './MyIngredientsSearch';
+import RecipeModalTwo from './RecipeModalTwo';
 
 function MyIngredients() {
   const [recipes, setRecipes] = useState([]); // State  upload data from API
   const [search, setSearch] = useState(''); // State  search bar with state  onChange
   const [query, setQuery] = useState('chicken'); // State  bar state for user search
+
+  const [dataModal, setDataModal] = useState();
+
+  const handleModal = (e, label) => {
+    e.preventDefault();
+    const modal = recipes.find((item) => item.strMeal === label);
+    setDataModal(modal);
+  };
+
+  const handClose = () => {
+    setDataModal(null);
+  };
 
   useEffect(() => {
     getRecipes();
@@ -44,9 +57,10 @@ function MyIngredients() {
           image={recipe.strMealThumb}
           cuisineType={recipe.strArea}
           recipe={recipe.strIngredient}
+          handleModal={handleModal}
         />
       ))}
-      ;
+      {dataModal && <RecipeModalTwo recipe={dataModal} close={handClose} />}
     </div>
   );
 }
