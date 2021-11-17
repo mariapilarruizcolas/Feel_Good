@@ -1,4 +1,4 @@
-.Quotes {
+/* .Quotes {
   width: 95%;
   display: flex;
   flex-wrap: wrap;
@@ -22,4 +22,83 @@
 .quote {
   margin: 1.8rem 0;
   font-size: 1.3rem;
+} */
+
+body {
+  background: #ccfccb;
+}
+
+#ct {
+  height: 50%;
+  width: 80%;
+  border: 2px solid #f1c40f;
+  margin: 100px auto;
+  text-align: center;
+  position: relative;
+  color: #fff;
+  padding: 15px;
+}
+
+span {
+  background: #568259;
+  color: #f1c40f;
+  padding: 0 10px;
+  font-size: 20px;
+  position: relative;
+  top: -28px;
+}
+.corner {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  transform: rotate(-45deg);
+  position: absolute;
+  background: #ccfccb;
+}
+
+#left_top {
+  top: -16px;
+  left: -16px;
+  border-color: transparent transparent #f7c603 transparent;
+}
+#right_top {
+  top: -16px;
+  right: -16px;
+  border-color: transparent transparent transparent #f1c40f;
+}
+#left_bottom {
+  bottom: -16px;
+  left: -16px;
+  border-color: transparent #f1c40f transparent transparent;
+}
+#right_bottom {
+  bottom: -16px;
+  right: -16px;
+  border-color: #f1c40f transparent transparent transparent;
+}
+p {
+  padding-top: 13px;
+  font-size: 18px;
+}
+#ct i {
+  font-size: 1.5rem;
+  word-break: break-word;
+  color: rgb(0, 0, 0);
+  line-height: 2.6rem;
+}
+
+.QuotesBtn {
+  background-color: #568259;
+  font-size: 1.3rem;
+  justify-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.quote {
+  margin: 1.8rem 0;
+  font-size: 1.3rem;
+  color: black;
 }
