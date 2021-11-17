@@ -44,7 +44,12 @@ function Sport() {
             body="Prenez le temps d'apprendre à connaître votre cotre corps et votre esprit."
           />
 
-          <Pilates className="compo-pilates" title="Pilates" imageUrl="../img/pilates.jpeg" body="Lorem ipsum dolor sit amet, consect" />
+          <Pilates
+            className="compo-pilates"
+            title="Pilates"
+            imageUrl="../img/pilates.jpeg"
+            body="Renforcer vos muscles profonds et améliorer votre équilibre avec nos exercices."
+          />
         </div>
       </div>
     </div>
