@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react';
 import ShowMusic from './ShowMusic';
 import ShowQuotes from './ShowQuotes';
 import { useParams } from 'react-router';
-import './FeelZen.css';
 
 function FeelZen() {
   const { id } = useParams();

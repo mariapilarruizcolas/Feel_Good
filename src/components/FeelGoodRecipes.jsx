@@ -16,7 +16,7 @@ function FeelGoodRecipes() {
     <div className="container">
       <div className="bloc-tabs">
         <button className={toggleState === 5 ? 'tabs active-tabs' : 'tabs'} onClick={() => setToggleState(5)}>
-          Recipes
+          Recettes
         </button>
         <button className={toggleState === 6 ? 'tabs active-tabs' : 'tabs'} onClick={() => setToggleState(6)}>
           Restaurants

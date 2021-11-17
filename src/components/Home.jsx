@@ -1,6 +1,5 @@
 import React from 'react';
 import FlipCard from './FlipCard';
-import './Home.css';
 
 function Home() {
   return (

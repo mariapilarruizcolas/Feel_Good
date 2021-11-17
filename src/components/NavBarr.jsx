@@ -32,7 +32,7 @@ function NavBarr() {
         <ul className="Bottom">
           <li>
             <NavLink activeClassName="active" to="/Sport">
-              <img className="logo" src="../img/Sport.png" alt="Bien Bouger" />
+              <img className="logo" src="../img/sport.png" alt="Bien Bouger" />
             </NavLink>
           </li>
           <li>
