@@ -1,29 +1,3 @@
-/* .Quotes {
-  width: 95%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  background-color: #ccfccb;
-  align-items: center;
-  font-size: 30px;
-  word-break: break-word;
-}
-
-.QuotesBtn {
-  background-color: #568259;
-  font-size: 35px;
-}
-
-.quotequote {
-  width: 50%;
-  height: 25%;
-  margin: 3rem auto;
-}
-.quote {
-  margin: 1.8rem 0;
-  font-size: 1.3rem;
-} */
-
 body {
   background: #ccfccb;
 }
