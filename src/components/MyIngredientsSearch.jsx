@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './MyIngredientsSearch.css';
+
 function MyIngredientsSearch({ title, image, handleModal }) {
   return (
     <div className="card-container-recipe">

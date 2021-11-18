@@ -1,9 +1,17 @@
+.image {
+  height: 35%;
+}
+
+.btn-bouton {
+  margin-left: 85%;
+  font-size: 1.4em;
+  color: #f1fffa;
+  background-color: darkcyan;
+}
+
 .show {
-  top: '35%';
-  left: '50%';
-  right: 'auto';
-  bottom: 'auto';
-  margin-right: '-50%';
-  width: '60%';
-  transform: 'translate(-40%, -10%)';
+  padding: 10px;
+  border: 2px dashed red;
+  margin-right: 1rem;
+  margin-top: 1rem;
 }

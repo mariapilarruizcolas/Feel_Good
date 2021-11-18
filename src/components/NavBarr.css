@@ -1,20 +1,24 @@
 .Header {
   list-style-type: none;
-  background-color: #96e6b3;
+  background-color: #96e6b392;
   color: #464e47;
   display: flex;
   align-items: center;
-  height: 10vh;
+  height: 9vh;
+  justify-content: space-between;
+  padding-right: 1rem;
 }
+
 a {
   text-decoration: none;
-  font-family: roboto;
+  font-family: lobster;
   color: #464e47;
   font-size: 20px;
 }
 a:hover {
   font-size: 25px;
 }
+
 .Bottom {
   display: none;
 }

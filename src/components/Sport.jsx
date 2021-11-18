@@ -1,5 +1,4 @@
-import React from 'react';
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router';
 
 import Workout from './Workout';
@@ -13,21 +12,21 @@ function Sport() {
   const [toggleState, setToggleState] = useState();
 
   useEffect(() => {
-    setToggleState(Number(id));
+    setToggleState(id);
   }, [id]);
 
   return (
     <div className="container">
       <div className="bloc-tabs">
-        <button className={toggleState === 1 ? 'tabs active-tabs' : 'tabs'} onClick={() => setToggleState(1)}>
+        <button className={toggleState === 'workout' ? 'tabs active-tabs' : 'tabs'} onClick={() => setToggleState('workout')}>
           Se Dépenser
         </button>
-        <button className={toggleState === 2 ? 'tabs active-tabs' : 'tabs'} onClick={() => setToggleState(2)}>
+        <button className={toggleState === 'relax' ? 'tabs active-tabs' : 'tabs'} onClick={() => setToggleState('relax')}>
           Se Relaxer
         </button>
       </div>
       <div className="content-tabs">
-        <div className={toggleState === 1 ? 'content  active-content' : 'content'}>
+        <div className={toggleState === 'workout' ? 'content  active-content' : 'content'}>
           <Workout title="Arms" imageSrc="../../img/arms.jpeg" />
           <Workout title="Chest" imageSrc="../../img/chest.jpeg" />
           <Workout title="Abs" imageSrc="../../img/abs.jpeg" />
@@ -36,7 +35,7 @@ function Sport() {
           <Workout title="Back" imageSrc="../../img/back.jpeg" />
         </div>
 
-        <div className={toggleState === 2 ? 'content active-content' : 'content'}>
+        <div className={toggleState === 'relax' ? 'content active-content' : 'content'}>
           <Yoga
             className="compo-yoga"
             title="Yoga"

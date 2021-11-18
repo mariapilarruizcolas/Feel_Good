@@ -1,4 +1,5 @@
 import React from 'react';
+
 import './Restaurants.css';
 
 function Restaurants({ name, image, restaurant }) {
@@ -9,7 +10,6 @@ function Restaurants({ name, image, restaurant }) {
         <div className="card-content">
           <div className="card-title">
             <h2>{name}</h2>
-            console
             <h5>{restaurant}</h5>
           </div>
         </div>

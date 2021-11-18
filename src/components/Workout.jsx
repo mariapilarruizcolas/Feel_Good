@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import './Workout.css';
 import Modal from 'react-modal';
 import axios from 'axios';
 Modal.setAppElement('#root');
+
+import './Workout.css';
 
 function Workout({ title, imageSrc }) {
   const [modalIsOpen, setmodalIsOpen] = useState(false);
@@ -41,8 +42,10 @@ function Workout({ title, imageSrc }) {
         <div className="card-title">
           <h3>{title}</h3>
         </div>
-        <div className="btn">
-          <button onClick={() => setmodalIsOpen(true)}>Voir plus</button>
+        <div className="btn-workout">
+          <button className="bouton-workout" onClick={() => setmodalIsOpen(true)}>
+            Voir plus
+          </button>
 
           <Modal
             isOpen={modalIsOpen}

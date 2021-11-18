@@ -46,33 +46,12 @@ h3 {
   margin-bottom: 0.5rem;
 }
 
-.btn {
-  display: flex;
-  justify-content: center;
-  text-transform: uppercase;
-  color: #464e47;
-  text-decoration: none;
-  font-weight: bold;
-  align-items: flex-end;
-  margin: 30px;
+.bouton-workout {
+  background-color: #568259;
 }
-
-.btn button {
-  font-size: 20px;
-  padding: 5px;
-  border-radius: 10%;
-  background: #f1fffa;
-  color: #568259;
-  font-weight: bold;
-  margin-top: 15%;
-  margin-bottom: 5%;
-  width: auto;
-  transform: scale(1);
-}
-
-.btn button:hover {
-  background: #f1fffa;
-  transform: scale(1.07);
+.bouton-workout:hover {
+  background-color: #568259;
+  transform: scale(1.2);
 }
 
 .image-container {

@@ -44,17 +44,15 @@ p {
   word-break: break-word;
   padding: 0.5rem;
 }
-.btn button {
-  font-size: 20px;
-  padding: 5px;
-  border-radius: 10%;
-  background: #f1fffa;
-  color: #568259;
-  font-weight: bold;
-  margin-top: 15%;
-  margin-bottom: 5%;
-  width: auto;
-  transform: scale(1);
+.bouton-workout-relax {
+  margin-left: 25%;
+}
+.bouton-workout-relax {
+  background-color: #568259;
+}
+.bouton-workout-relax:hover {
+  background-color: #568259;
+  transform: scale(1.2);
 }
 
 @media screen and (max-width: 640px) {

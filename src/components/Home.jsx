@@ -1,4 +1,5 @@
 import React from 'react';
+
 import FlipCard from './FlipCard';
 
 function Home() {
@@ -8,4 +9,5 @@ function Home() {
     </div>
   );
 }
+
 export default Home;

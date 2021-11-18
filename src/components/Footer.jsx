@@ -25,22 +25,24 @@ function Footer() {
   }
 
   return (
-    <div className="containerFooter">
-      <title>Formulaire de contact</title>
+    <div className="container-footer">
+      <title className="title-footer">Formulaire de contact</title>
       <form>
-        <label htmlFor="fname">Nom & prénom</label>
-        <input type="text" id="fname" name="firstname" placeholder="Votre nom et prénom" onChange={(e) => setFname(e.target.value)}></input>
-
-        <label htmlFor="emailAddress">Email</label>
-        <input id="emailAddress" type="email" name="email" placeholder="Votre email" onChange={(e) => setEmailAddress(e.target.value)}></input>
-
-        <label htmlFor="sujet">Message</label>
-        <input type="text" id="sujet" name="sujet" placeholder="L'objet de votre message" onChange={(e) => setSujet(e.target.value)}></input>
-
+        <div className="name-input">
+          <label htmlFor="fname">Nom et prénom: </label>
+          <input type="text" id="fname" name="firstname" placeholder="Votre nom et prénom" onChange={(e) => setFname(e.target.value)}></input>
+        </div>
+        <div className="email-input">
+          <label htmlFor="emailAddress">Email:</label>
+          <input id="emailAddress" type="email" name="email" placeholder="Votre email" onChange={(e) => setEmailAddress(e.target.value)}></input>
+        </div>
+        <label className="msg-message" htmlFor="sujet">
+          Message:
+        </label>
+        <textarea type="text" id="sujet" name="sujet" placeholder="L'objet de votre message" onChange={(e) => setSujet(e.target.value)}></textarea>
         <button className="btnFooter" value="Merci pour votre message!" onClick={handleSendEmail}>
           Envoyer
         </button>
-
       </form>
     </div>
   );

@@ -7,6 +7,7 @@ import Sport from './components/Sport';
 import FeelZen from './components/FeelZen';
 import Footer from './components/Footer';
 import Home from './components/Home';
+
 import './App.css';
 
 function App() {

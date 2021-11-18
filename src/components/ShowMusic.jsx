@@ -1,6 +1,9 @@
 import React from 'react';
+
 import DisplayMusic from './DisplayMusic';
+
 import './ShowMusic.css';
+
 const musicItems = [
   {
     key: 1,
@@ -25,7 +28,7 @@ const musicItems = [
   },
   {
     key: 4,
-    title: 'Pour danser toute la nuit',
+    title: "Danser à plus s'arreter",
     name: 'Disco list',
     link: 'https://www.deezer.com/fr/album/77264522',
     image: '../img/discoball.jpg',
