@@ -40,6 +40,7 @@ function Footer() {
         <button className="btnFooter" value="Merci pour votre message!" onClick={handleSendEmail}>
           Envoyer
         </button>
+
       </form>
     </div>
   );

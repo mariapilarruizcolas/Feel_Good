@@ -1,5 +1,6 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
+
 import NavBarr from './components/NavBarr';
 import FeelGoodRecipes from './components/FeelGoodRecipes';
 import Sport from './components/Sport';
@@ -20,9 +21,9 @@ function App() {
         <div>
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route path="/Sport" component={Sport} />
-            <Route path="/FeelGoodRecipes" component={FeelGoodRecipes} />
-            <Route path="/FeelZen" component={FeelZen} />
+            <Route path="/Sport/:id" component={Sport} />
+            <Route path="/FeelGoodRecipes/:id" component={FeelGoodRecipes} />
+            <Route path="/FeelZen/:id" component={FeelZen} />
           </Switch>
         </div>
         <Footer />

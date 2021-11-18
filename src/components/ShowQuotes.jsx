@@ -30,11 +30,23 @@ function App() {
       <button className="QuotesBtn" onClick={getQuote}>
         nouvelle citation
       </button>
-      <p className="quotequote">&quot;citation&quot;: {quotes.citation}</p>
-      <p className="quotequote">&quot;acteur&quot;: {quotes.infos.acteur}</p>
-      <p className="quotequote">&quot;personnage&quot;: {quotes.infos.personnage}</p>
-      <p className="quotequote">&quot;saison&quot;: {quotes.infos.saison}</p>
-      <p className="quotequote">&quot;épisode&quot;: {quotes.infos.episode}</p>
+
+      <div id="ct">
+        <div className="corner " id="left_top"></div>
+        <div className="corner" id="left_bottom"></div>
+        <div className="corner" id="right_top"></div>
+        <div className="corner" id="right_bottom"></div>
+        <span>{quotes.infos.acteur}</span>
+        <blockquote>
+          <p>
+            <i>&ldquo;{quotes.citation}&rdquo; </i>
+          </p>
+        </blockquote>
+        <p className="quote">personnage : {quotes.infos.personnage}</p>
+        <p className="quote">
+          saison : {quotes.infos.saison} ......{quotes.infos.episode}
+        </p>
+      </div>
     </div>
   );
 }

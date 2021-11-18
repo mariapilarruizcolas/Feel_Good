@@ -162,6 +162,7 @@ button {
   color: var(--white-1);
   margin: 20px;
   letter-spacing: 2px;
+  word-break: break-word;
 
   padding: 9px 20px;
   border: 1px solid var(--grey);

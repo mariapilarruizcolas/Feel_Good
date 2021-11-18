@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+
 import './FlipCard.css';
 
 function FlipCard() {
@@ -26,10 +27,10 @@ function FlipCard() {
               ></img>
             </figure>
             <div className="btn">
-              <NavLink activeClassName="active" to="/Sport">
+              <NavLink activeClassName="active" to="/Sport/1">
                 <button>Se Dépenser</button>
               </NavLink>
-              <NavLink activeClassName="active" to="/Sport">
+              <NavLink activeClassName="active" to="/Sport/2">
                 <button>Se Rélaxer</button>
               </NavLink>
             </div>
@@ -57,8 +58,11 @@ function FlipCard() {
               ></img>
             </figure>
             <div className="btn">
-              <NavLink activeClassName="active" to="/FeelGoodRecipes">
+              <NavLink activeClassName="active" to="/FeelGoodRecipes/5">
                 <button>Idées Recettes</button>
+              </NavLink>
+              <NavLink activeClassName="active" to="/FeelGoodRecipes/6">
+                <button>Idées Restaurants</button>
               </NavLink>
             </div>
           </div>
@@ -85,11 +89,11 @@ function FlipCard() {
               ></img>
             </figure>
             <div className="btn">
-              <NavLink activeClassName="active" to="/FeelZen">
-                <button>Zen-Citation</button>
+              <NavLink activeClassName="active" to="/FeelZen/3">
+                <button>Zen Musique</button>
               </NavLink>
-              <NavLink activeClassName="active" to="/FeelZen">
-                <button>Zen-Musique</button>
+              <NavLink activeClassName="active" to="/FeelZen/4">
+                <button>Zen Citation</button>
               </NavLink>
             </div>
           </div>
