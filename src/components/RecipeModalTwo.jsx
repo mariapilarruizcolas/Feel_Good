@@ -1,7 +1,5 @@
 import React from 'react';
 
-import './RecipeModalTwo.css';
-
 function RecipeModalTwo({ recipe, close }) {
   return (
     <div className="show">
