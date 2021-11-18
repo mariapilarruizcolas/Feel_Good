@@ -28,7 +28,7 @@ function App() {
   return (
     <div className="Quotes">
       <button className="QuotesBtn" onClick={getQuote}>
-        nouvelle citation
+        Nouvelle Citation
       </button>
 
       <div id="ct">
@@ -42,9 +42,11 @@ function App() {
             <i>&ldquo;{quotes.citation}&rdquo; </i>
           </p>
         </blockquote>
-        <p className="quote">personnage : {quotes.infos.personnage}</p>
         <p className="quote">
-          saison : {quotes.infos.saison} ......{quotes.infos.episode}
+          <h2> {quotes.infos.personnage}</h2>
+        </p>
+        <p className="quote">
+          Saison {quotes.infos.saison} épisode {quotes.infos.episode}
         </p>
       </div>
     </div>
