@@ -26,16 +26,15 @@
   margin-bottom: 5rem;
 }
 .yoga-description ul {
-  width: 130%;
+  width: 100%;
 }
 .yoga-description ul li {
-  font-size: 0.8rem;
-  width: 65%;
+  font-size: 1rem;
+  width: 80%;
 }
 .img-yoga {
   width: 35%;
   height: 30%;
-  margin-right: 1.5rem;
 }
 .exercise-yoga-title {
   font-size: 1.3rem;
