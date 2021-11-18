@@ -1,6 +1,7 @@
 import React from 'react';
+import './Restaurants.css';
 
-function Restaurants({ name, image, location }) {
+function Restaurants({ name, image, restaurant }) {
   return (
     <div className="card-container-restaurant">
       <div className="image-container-restaurant">
@@ -8,10 +9,16 @@ function Restaurants({ name, image, location }) {
         <div className="card-content">
           <div className="card-title">
             <h2>{name}</h2>
-            <h5>{location}</h5>
+            console
+            <h5>{restaurant}</h5>
           </div>
         </div>
-        <div className="card-body">nada</div>
+        <div className="card-body">
+          {restaurant &&
+            restaurant.map((categorie, i) => {
+              return <p key={i}>{categorie.text}</p>;
+            })}
+        </div>
       </div>
     </div>
   );

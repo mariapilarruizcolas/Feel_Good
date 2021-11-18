@@ -12,7 +12,7 @@ function Recipes() {
 
   const [recipes, setRecipes] = useState([]); // State  upload data from API
   const [search, setSearch] = useState(''); // State  search bar with state  onChange
-  const [query, setQuery] = useState('chicken'); // State  bar state for user search
+  const [query, setQuery] = useState(''); // State  bar state for user search
 
   const [dataModal, setDataModal] = useState();
 
@@ -45,14 +45,55 @@ function Recipes() {
     setSearch(''); // For reset bar search on bar
   };
 
+  const getSearchFish = async (e) => {
+    setQuery(e.target.value);
+    const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${API_ID}&app_key=${API_KEY}`); // &from=0&to=100  add this on last of line for more recipes
+    const data = await response.json();
+    setRecipes(data.hits);
+  };
+  const getSearchDiet = async (e) => {
+    setQuery(e.target.value);
+    const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${API_ID}&app_key=${API_KEY}`); // &from=0&to=100  add this on last of line for more recipes
+    const data = await response.json();
+    setRecipes(data.hits);
+  };
+  const getSearchVegi = async (e) => {
+    setQuery(e.target.value);
+    const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${API_ID}&app_key=${API_KEY}`); // &from=0&to=100  add this on last of line for more recipes
+    const data = await response.json();
+    setRecipes(data.hits);
+  };
+  const getSearchProtein = async (e) => {
+    setQuery(e.target.value);
+    const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${API_ID}&app_key=${API_KEY}`); // &from=0&to=100  add this on last of line for more recipes
+    const data = await response.json();
+    setRecipes(data.hits);
+  };
   return (
     <div className="recipes">
       <form className="form_search" onSubmit={getSearch}>
-        <input className="bar_search" type="text" value={search} onChange={updateSearch}></input>
+        <input className="bar_search" type="text" value={search} onChange={updateSearch} placeholder="recettes"></input>
         <button className="btn_search" type="submit">
-          Search
+          Valider
         </button>
       </form>
+      <div className="btn-all">
+        <button className="btn-prot" onClick={getSearchProtein} value="prot">
+          Recettes Protéinés
+        </button>
+        <button className="btn-diet" onClick={getSearchDiet} value="diet">
+          Recettes Allégées
+        </button>
+        <button className="btn-fish" onClick={getSearchFish} value="fish">
+          Recettes de la Mer
+        </button>
+        <button className="btn-vegi" onClick={getSearchVegi} value="vegi">
+          Recettes Végétariennes
+        </button>
+        <button className="btn-beef" onClick={getSearchVegi} value="beef">
+          Recettes de viandes
+        </button>
+      </div>
       <div className="recipesSearch">
         {recipes.map((recipe) => (
           <RecipesSearch key={recipe.recipe.label} label={recipe.recipe.label} image={recipe.recipe.image} handleModal={handleModal} />

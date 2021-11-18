@@ -6,7 +6,7 @@ import RecipeModalTwo from './RecipeModalTwo';
 function MyIngredients() {
   const [recipes, setRecipes] = useState([]); // State  upload data from API
   const [search, setSearch] = useState(''); // State  search bar with state  onChange
-  const [query, setQuery] = useState('chicken'); // State  bar state for user search
+  const [query, setQuery] = useState(''); // State  bar state for user search
 
   const [dataModal, setDataModal] = useState();
 

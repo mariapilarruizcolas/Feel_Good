@@ -21,7 +21,10 @@
   margin-top: 30px;
   background-size: cover;
 }
-
+.card-container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px 0;
+}
 .card-content {
   display: flex;
   flex-direction: column;
