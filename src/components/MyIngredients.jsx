@@ -10,9 +10,11 @@ function MyIngredients() {
 
   const [dataModal, setDataModal] = useState();
 
-  const handleModal = (e, label) => {
+  const handleModal = (e, title) => {
     e.preventDefault();
-    const modal = recipes.find((item) => item.strMeal === label);
+    const modal = recipes.find((item) => {
+      return item.strMeal === title;
+    });
     setDataModal(modal);
   };
 
@@ -56,7 +58,6 @@ function MyIngredients() {
           title={recipe.strMeal}
           image={recipe.strMealThumb}
           cuisineType={recipe.strArea}
-          recipe={recipe.strIngredient}
           handleModal={handleModal}
         />
       ))}

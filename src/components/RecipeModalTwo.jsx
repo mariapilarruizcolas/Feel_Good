@@ -9,7 +9,7 @@ function RecipeModalTwo({ recipe, close }) {
       <div className="ingredients">
         <h1>{recipe.strMeal}</h1>
         <h4>{recipe.strMeal}</h4>
-        <h5>{recipe.strMeal}</h5>
+        <h5>{recipe.strIngredient}</h5>
         {recipe.strIngredient &&
           recipe.strIngredient.map((ingredient, i) => {
             return <p key={i}>{ingredient.text}</p>;

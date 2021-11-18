@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import Recipes from './Recipes';
-import ShowRestaurants from './ShowRestaurants';
+import ShowRestaurants from './restaurants/ShowRestaurants';
 import { useParams } from 'react-router';
 import './FeelGoodRecipes.css';
 

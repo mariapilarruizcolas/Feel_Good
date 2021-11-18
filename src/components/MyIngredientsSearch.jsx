@@ -1,6 +1,6 @@
 import React from 'react';
 
-function MyIngredientsSearch({ title, image, handleModal, label }) {
+function MyIngredientsSearch({ title, image, handleModal }) {
   return (
     <div className="card-container-recipe">
       <div className="image-container-recipe">
@@ -11,7 +11,7 @@ function MyIngredientsSearch({ title, image, handleModal, label }) {
           </div>
         </div>
         <div className="card-body">
-          <button className="button" onClick={(e) => handleModal(e, label)}>
+          <button className="button" onClick={(e) => handleModal(e, title)}>
             Recette
           </button>
         </div>
