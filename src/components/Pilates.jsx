@@ -17,8 +17,10 @@ function Pilates({ title, imageUrl, body }) {
         <p>{body}</p>
       </div>
 
-      <div className="btn">
-        <button onClick={() => setmodalIsOpen(true)}>Voir plus</button>
+      <div className="btn-workout-relax">
+        <button className="bouton-workout-relax" onClick={() => setmodalIsOpen(true)}>
+          Voir plus
+        </button>
 
         <Modal isOpen={modalIsOpen} onRequestClose={() => setmodalIsOpen(false)}>
           <div>

@@ -29,9 +29,8 @@
   margin: 0.5rem;
   margin-top: 0.5rem;
 }
-h2 {
-  margin: 0;
-  padding: 0;
+.desc-music {
+  word-break: break-word;
 }
 
 .card-title-music {
@@ -47,11 +46,8 @@ h2 {
 .likeButton-music {
   font-size: 20px;
   padding: 5px;
-  border-radius: 10%;
-  background: #f1fffa;
-  color: #568259;
-  font-weight: bold;
+  background: #568259;
+  color: #000000;
   margin-top: 15%;
-  width: auto;
-  transform: scale(1);
+  transform: scale(0.8);
 }

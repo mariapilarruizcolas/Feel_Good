@@ -1,18 +1,18 @@
-import React from 'react';
-import './ShowRestaurants.css';
-import { useEffect, useState } from 'react/cjs/react.development';
-import Restaurants from './Restaurants';
+import React, { useEffect, useState } from 'react/cjs/react.development';
 import axios from 'axios';
 
+import Restaurants from './Restaurants';
+
+import './ShowRestaurants.css';
+
 function ShowRecipes() {
-  const [restaurants, setRestaurants] = useState(); // State  upload data from API
+  const [restaurants, setRestaurants] = useState();
   const API_TOKEN =
     'GoDl5poS909gRcyIW3PUMFROIB9BibQ59t0Lk7GJtnR4V5DTjq6-ssjbbR9y2SCAp6128zOoXU29OaJtC3t70XHYRGTbrfdvR61Xfte5tWq_luo5dZ5ma5ZUsh-WYXYx';
-  //const [queryLocation, setQueryLocation] = useState('paris');
   const [queryFood, setQueryFood] = useState('asian');
   const [queryCity, setQueryCity] = useState('paris');
-  const [search, setSearch] = useState(''); // State  search bar with state  onChange
-  const [search1, setSearch1] = useState(''); // State  search bar with state  onChange
+  const [search, setSearch] = useState('');
+  const [search1, setSearch1] = useState('');
   const config = {
     headers: {
       accept: 'application/json',
@@ -37,18 +37,18 @@ function ShowRecipes() {
   };
 
   const getSearch = (e) => {
-    e.preventDefault(); //  for stop refreching with default like everything it's ok  oterwise any writting it will ask request to api
-    setQueryFood(search); // for validation users  of search bar   form ( onSubmit )
+    e.preventDefault();
+    setQueryFood(search);
     setQueryCity(search1);
-    setSearch(''); // For reset bar search on bar
-    setSearch1(''); // For reset bar search on bar
+    setSearch('');
+    setSearch1('');
   };
   return (
     <div className="restaurants">
       <form className="form_search" onSubmit={getSearch}>
         <input className="bar_search_food" type="text" value={search} onChange={updateSearch} required placeholder="Restaurants"></input>
-        <input className="bar_search_city" type="text" value={search1} onChange={updateSearchCity} required placeholder="Ville"></input>
-        <button className="btn_search" type="submit">
+        <input className="bar_search_city " type="text" value={search1} onChange={updateSearchCity} required placeholder="Ville"></input>
+        <button className="btn_search bouton-restaurant" type="submit">
           Valider
         </button>
       </form>
@@ -61,4 +61,5 @@ function ShowRecipes() {
     </div>
   );
 }
+
 export default ShowRecipes;

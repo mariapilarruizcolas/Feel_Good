@@ -1,5 +1,5 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
+
 import './RecipesSearch.css';
 
 function RecipesSearch({ label, image, handleModal }) {
@@ -13,7 +13,7 @@ function RecipesSearch({ label, image, handleModal }) {
           </div>
         </div>
         <div className="card-body">
-          <button className="button" onClick={(e) => handleModal(e, label)}>
+          <button className="button-recipes" onClick={(e) => handleModal(e, label)}>
             Recette
           </button>
         </div>

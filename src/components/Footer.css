@@ -1,10 +1,10 @@
 .container-footer {
-  margin-top: 1rem;
-  border: 3px solid #ccfccb;
+  margin-top: 2.5rem;
   width: 92%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 6rem;
+  background-color: #b5e5c5;
 }
 
 .container-footer form {
@@ -20,17 +20,29 @@ title {
   justify-content: flex-start;
   margin-bottom: 1rem;
 }
-
+.title-footer {
+  margin-left: 2%;
+  padding-top: 1rem;
+  margin-bottom: 2rem;
+}
+.msg-message {
+  margin-bottom: 1rem;
+}
 #fname,
 #emailAddress {
   height: 1.5rem;
 }
-
+#sujet {
+  height: 7rem;
+  width: 50%;
+}
 #fname {
   margin-left: 2rem;
   width: 9rem;
 }
-
+.email-input {
+  margin-top: 1rem;
+}
 #btn-submit {
   margin: 1rem auto;
   padding: 0.7rem;
@@ -57,13 +69,11 @@ title {
   height: 15vh;
 }
 
-@media screen and (min-width: 640px) and (max-width: 850px) {
-  .container-footer {
-    border: 3px solid #ccfccb;
-    width: 92%;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.btnFooter {
+  background-color: #568259;
+  margin-right: auto;
+  margin-left: auto;
+  word-break: break-word;
 }
 
 @media screen and (max-width: 640px) {
@@ -73,8 +83,4 @@ title {
     margin-left: auto;
     margin-right: auto;
   }
-}
-
-.btnFooter {
-  background-color: #568259;
 }

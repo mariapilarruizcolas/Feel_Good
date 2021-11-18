@@ -25,12 +25,12 @@ function FlipCard() {
                 alt="sport2"
               ></img>
             </figure>
-            <div className="btn">
-              <NavLink activeClassName="active" to="/Sport/1">
-                <button>Se Dépenser</button>
+            <div className="btnFlip">
+              <NavLink activeClassName="active" to="/Sport/workout">
+                <button className="btn-flipCard">Se Dépenser</button>
               </NavLink>
-              <NavLink activeClassName="active" to="/Sport/2">
-                <button>Se Rélaxer</button>
+              <NavLink activeClassName="active" to="/Sport/relax">
+                <button className="btn-flipCard">Se Rélaxer</button>
               </NavLink>
             </div>
           </div>
@@ -55,12 +55,12 @@ function FlipCard() {
                 alt="repas2"
               ></img>
             </figure>
-            <div className="btn">
-              <NavLink activeClassName="active" to="/FeelGoodRecipes/5">
-                <button>Idées Recettes</button>
+            <div className="btnFlip">
+              <NavLink activeClassName="active" to="/FeelGoodRecipes/recipes">
+                <button className="btn-flipCard">Idées Recettes</button>
               </NavLink>
-              <NavLink activeClassName="active" to="/FeelGoodRecipes/6">
-                <button>Idées Restaurants</button>
+              <NavLink activeClassName="active" to="/FeelGoodRecipes/restaurants">
+                <button className="btn-flipCard">Idées Restaurants</button>
               </NavLink>
             </div>
           </div>
@@ -85,12 +85,12 @@ function FlipCard() {
                 alt="zen2"
               ></img>
             </figure>
-            <div className="btn">
-              <NavLink activeClassName="active" to="/FeelZen/3">
-                <button>Zen Musique</button>
+            <div className="btnFlip">
+              <NavLink activeClassName="active" to="/FeelZen/music">
+                <button className="btn-flipCard">Zen Musique</button>
               </NavLink>
-              <NavLink activeClassName="active" to="/FeelZen/4">
-                <button>Zen Citation</button>
+              <NavLink activeClassName="active" to="/FeelZen/quotes">
+                <button className="btn-flipCard">Zen Citation</button>
               </NavLink>
             </div>
           </div>

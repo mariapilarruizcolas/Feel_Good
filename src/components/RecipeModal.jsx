@@ -1,14 +1,17 @@
-import './RecipeModal.css';
 import React from 'react';
+
+import './RecipeModal.css';
 
 function RecipeModal({ recipe, close }) {
   return (
     <div className="show">
-      <button onClick={close}>X</button>
-      <img className="image" src={recipe.recipe.image} alt=""></img>
+      <button className="btn-bouton" onClick={close}>
+        X
+      </button>
+      <img className="image" src={recipe.recipe.image} alt="" />
       <div className="ingredients">
-        <h1>{recipe.recipe.label}</h1>
-        <h4>{recipe.recipe.calories}</h4>
+        <h2>{recipe.recipe.label}</h2>
+        <h4>{Math.round(recipe.recipe.calories)} Kcal</h4>
         <h5>{recipe.recipe.cuisineType}</h5>
         {recipe.recipe.ingredients &&
           recipe.recipe.ingredients.map((ingredient, i) => {

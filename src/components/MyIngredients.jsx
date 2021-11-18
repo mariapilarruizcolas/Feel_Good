@@ -1,13 +1,12 @@
-import React from 'react';
-import { useEffect, useState } from 'react/cjs/react.development';
+import React, { useEffect, useState } from 'react/cjs/react.development';
+
 import MyIngredientsSearch from './MyIngredientsSearch';
 import RecipeModalTwo from './RecipeModalTwo';
 
 function MyIngredients() {
-  const [recipes, setRecipes] = useState([]); // State  upload data from API
-  const [search, setSearch] = useState(''); // State  search bar with state  onChange
-  const [query, setQuery] = useState(''); // State  bar state for user search
-
+  const [recipes, setRecipes] = useState([]);
+  const [search, setSearch] = useState('');
+  const [query, setQuery] = useState('');
   const [dataModal, setDataModal] = useState();
 
   const handleModal = (e, title) => {
@@ -27,20 +26,19 @@ function MyIngredients() {
   }, [query]);
 
   const getRecipes = async () => {
-    const response = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${query}`); // &from=0&to=100  add this on last of line for more recipes
+    const response = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${query}`);
     const data = await response.json();
     setRecipes(data.meals);
   };
 
-  // const for search bar with state  onChange
   const updateSearch = (e) => {
     setSearch(e.target.value);
   };
 
   const getSearch = (e) => {
-    e.preventDefault(); //  for stop refreching with default like everything it's ok  oterwise any writting it will ask request to api
-    setQuery(search); // for validation users  of search bar   form ( onSubmit )
-    setSearch(''); // For reset bar search on bar
+    e.preventDefault();
+    setQuery(search);
+    setSearch('');
   };
 
   return (

@@ -1,5 +1,7 @@
 import React from 'react';
+
 import './MusicCard.css';
+
 function MusicCard(props) {
   return (
     <div className="card-container-music">
@@ -8,7 +10,7 @@ function MusicCard(props) {
       </div>
       <div className="card-content-music">
         <div className="card-title-music">
-          <h2>{props.title}</h2>
+          <h2 className="desc-music">{props.title}</h2>
         </div>
         <div className="card-body-music">
           <div>

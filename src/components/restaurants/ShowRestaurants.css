@@ -5,3 +5,11 @@
   flex-wrap: wrap;
   padding: 10px;
 }
+
+.bouton-restaurant,
+.bouton-restaurant:hover {
+  background-color: #568259;
+}
+.bar_search_food {
+  margin-right: 2rem;
+}

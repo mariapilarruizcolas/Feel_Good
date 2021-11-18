@@ -65,6 +65,7 @@ button {
 
 .content h2 {
   padding: 0px 0 5px 0px;
+  word-break: break-word;
 }
 
 .content hr {
