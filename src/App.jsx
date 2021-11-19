@@ -1,27 +1,35 @@
 import React from 'react';
+import { Switch, Route } from 'react-router-dom';
 
-import logo from './logo.png';
+import NavBarr from './components/NavBarr';
+import FeelGoodRecipes from './components/FeelGoodRecipes';
+import Sport from './components/Sport';
+import FeelZen from './components/FeelZen';
+import Footer from './components/Footer';
+import Home from './components/Home';
+
 import './App.css';
 
 function App() {
   return (
-    <main className="rsw-container">
-      <div
-        className="rsw-item"
-        style={{
-          paddingBottom: '2rem',
-        }}>
-        <img src={logo} width="20%" alt="WCS logo" />
+    <div className="App">
+      <NavBarr />
+      <div className="title-home">
+        <h2>Le plus grand secret pour le bonheur, c&apos;est d&apos;être bien avec soi.</h2>
+        <h3>Alors Feel Good Avec Nous</h3>
       </div>
-      <div className="rsw-item">
-        <p>Welcome to your fresh, lightweight, React App ! &#127752;</p>
+      <div>
+        <div>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/Sport/:id" component={Sport} />
+            <Route path="/FeelGoodRecipes/:id" component={FeelGoodRecipes} />
+            <Route path="/FeelZen/:id" component={FeelZen} />
+          </Switch>
+        </div>
+        <Footer />
       </div>
-      <div className="rsw-item">
-        <p>
-          Start in the <code>App.jsx</code> component !
-        </p>
-      </div>
-    </main>
+    </div>
   );
 }
 

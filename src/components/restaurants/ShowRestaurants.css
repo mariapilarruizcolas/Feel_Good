@@ -1,0 +1,15 @@
+.restaurants_Search {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.bouton-restaurant,
+.bouton-restaurant:hover {
+  background-color: #568259;
+}
+.bar_search_food {
+  margin-right: 2rem;
+}

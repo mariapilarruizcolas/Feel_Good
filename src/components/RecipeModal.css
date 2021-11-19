@@ -1,0 +1,21 @@
+.image {
+  height: 35%;
+}
+
+.btn-bouton {
+  margin-left: 85%;
+  font-size: 1.4em;
+  color: #f1fffa;
+  background-color: darkcyan;
+}
+
+.show {
+  padding: 10px;
+  border: 2px dashed red;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  height: auto;
+  width: 95%;
+  position: absolute;
+  background-color: #96e6b3;
+}

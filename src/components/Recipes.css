@@ -1,0 +1,22 @@
+.recipesSearch {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.btn-selection {
+  background-color: #568259;
+}
+.btn-selection:hover {
+  background-color: #568259;
+  transform: scale(1.2);
+}
+.btn-valid {
+  background-color: #1a2c1d;
+  color: aliceblue;
+}
+.form_search {
+  text-align: center;
+}

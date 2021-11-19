@@ -1,0 +1,94 @@
+.card-container {
+  width: 250px;
+  overflow: hidden;
+  box-shadow: 0 0 15px -5px;
+  transition: 0.3s;
+  animation: ease-in;
+  margin-top: 20px;
+  margin: 20px;
+  padding-top: 0.7rem;
+  background-color: #96e6b3;
+  height: 100%;
+}
+.card-container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px 0;
+}
+.image-container img {
+  overflow: hidden;
+}
+
+.exo-yoga {
+  display: flex;
+}
+.yoga-description {
+  align-self: center;
+  margin-bottom: 5rem;
+}
+.yoga-description ul {
+  width: 100%;
+}
+.yoga-description ul li {
+  font-size: 1rem;
+  width: 80%;
+}
+.img-yoga {
+  width: 35%;
+  height: 30%;
+}
+.exercise-yoga-title {
+  font-size: 1.3rem;
+  margin-bottom: 5rem;
+}
+p {
+  word-break: break-word;
+  padding: 0.5rem;
+}
+.bouton-workout-relax {
+  margin-left: 25%;
+}
+.bouton-workout-relax {
+  background-color: #568259;
+}
+.bouton-workout-relax:hover {
+  background-color: #568259;
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 640px) {
+  .card-container {
+    width: 250px;
+    overflow: hidden;
+    box-shadow: 0 0 15px -5px;
+    transition: 0.3s;
+    animation: ease-in;
+    margin-top: 20px;
+    margin: 20px;
+    padding-top: 0.7rem;
+    background-color: #96e6b3;
+    height: 100%;
+  }
+  .card-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px 0;
+  }
+  .exo-yoga {
+    display: block;
+  }
+  .yoga-description {
+    display: block;
+  }
+  .descriptionExercise {
+    font-size: 0.8rem;
+    padding: 1rem;
+    width: 100%;
+  }
+  .img-yoga {
+    background-size: cover;
+    width: 90%;
+  }
+  .exercise-yoga-title {
+    font-size: 1rem;
+    margin: 2rem auto 1rem;
+  }
+}
