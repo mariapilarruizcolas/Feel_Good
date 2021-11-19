@@ -33,6 +33,11 @@ function NavBarr() {
       <div className="NavBarrMobile">
         <ul className="Bottom">
           <li>
+            <NavLink activeClassName="active" to="/">
+              <img className="logo" src="../img/logo.png" alt="Home" />
+            </NavLink>
+          </li>
+          <li>
             <NavLink activeClassName="active" to="/Sport/workout">
               <img className="logo" src="../img/sport.png" alt="Bien Bouger" />
             </NavLink>
