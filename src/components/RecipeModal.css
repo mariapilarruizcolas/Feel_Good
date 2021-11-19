@@ -14,4 +14,8 @@
   border: 2px dashed red;
   margin-right: 1rem;
   margin-top: 1rem;
+  height: auto;
+  width: 95%;
+  position: absolute;
+  background-color: #96e6b3;
 }
