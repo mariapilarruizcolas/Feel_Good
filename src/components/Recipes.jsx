@@ -7,12 +7,12 @@ import RecipeModal from './RecipeModal';
 import './Recipes.css';
 
 function Recipes() {
-  const API_ID = '03e0caa6';
-  const API_KEY = 'd5cd0ae20bd99294c54f4916e7073408';
+  const API_ID = '03e0caa6'; //03e0caa6 // 076b5b4e       API ID
+  const API_KEY = 'd5cd0ae20bd99294c54f4916e7073408'; //d5cd0ae20bd99294c54f4916e7073408 // 89dcacb527cb1b9261cd1de41587da7e     API KEY
 
-  const [recipes, setRecipes] = useState([]);
-  const [search, setSearch] = useState('');
-  const [query, setQuery] = useState('');
+  const [recipes, setRecipes] = useState([]); // State  upload data from API
+  const [search, setSearch] = useState(''); // State  search bar with state  onChange
+  const [query, setQuery] = useState(''); // State  bar state for user search
 
   const [dataModal, setDataModal] = useState();
 
@@ -31,7 +31,7 @@ function Recipes() {
   }, [query]);
 
   const getRecipes = async () => {
-    const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${API_ID}&app_key=${API_KEY}`);
+    const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${API_ID}&app_key=${API_KEY}`); // &from=0&to=100  add this on last of line for more recipes
     const data = await response.json();
     setRecipes(data.hits);
   };
@@ -40,20 +40,20 @@ function Recipes() {
   };
 
   const getSearch = (e) => {
-    e.preventDefault();
-    setQuery(search);
-    setSearch('');
+    e.preventDefault(); //  for stop refreching with default like everything it's ok  oterwise any writting it will ask request to api
+    setQuery(search); // for validation users  of search bar   form ( onSubmit )
+    setSearch(''); // For reset bar search on bar
   };
 
   const getSearchFish = async (e) => {
     setQuery(e.target.value);
-    const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${API_ID}&app_key=${API_KEY}`);
+    const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${API_ID}&app_key=${API_KEY}`); // &from=0&to=100  add this on last of line for more recipes
     const data = await response.json();
     setRecipes(data.hits);
   };
   const getSearchDiet = async (e) => {
     setQuery(e.target.value);
-    const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${API_ID}&app_key=${API_KEY}`);
+    const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${API_ID}&app_key=${API_KEY}`); // &from=0&to=100  add this on last of line for more recipes
     const data = await response.json();
     setRecipes(data.hits);
   };
@@ -73,30 +73,36 @@ function Recipes() {
     <div className="recipes">
       <form className="form_search" onSubmit={getSearch}>
         <input className="bar_search" type="text" value={search} onChange={updateSearch} placeholder="recettes"></input>
-        <button className="btn_search btn-valid" type="submit">
+        <button className="btn_search bouton-restaurant" type="submit">
           Valider
         </button>
       </form>
       <div className="btn-all">
-        <button className="btn-prot btn-selection" onClick={getSearchProtein} value="prot">
+        <button className="btn-prot bouton-restaurant" onClick={getSearchProtein} value="protein">
           Recettes Protéinés
         </button>
-        <button className="btn-diet btn-selection" onClick={getSearchDiet} value="diet">
+        <button className="btn-diet bouton-restaurant" onClick={getSearchDiet} value="diet">
           Recettes Allégées
         </button>
-        <button className="btn-fish btn-selection" onClick={getSearchFish} value="fish">
+        <button className="btn-fish bouton-restaurant" onClick={getSearchFish} value="fish">
           Recettes de la Mer
         </button>
-        <button className="btn-vegi btn-selection" onClick={getSearchVegi} value="vegi">
+        <button className="btn-vegi bouton-restaurant" onClick={getSearchVegi} value="vegetarian">
           Recettes Végétariennes
         </button>
-        <button className="btn-beef btn-selection" onClick={getSearchVegi} value="beef">
+        <button className="btn-beef bouton-restaurant" onClick={getSearchVegi} value="beef">
           Recettes de viandes
         </button>
       </div>
       <div className="recipesSearch">
         {recipes.map((recipe) => (
-          <RecipesSearch key={recipe.recipe.label} label={recipe.recipe.label} image={recipe.recipe.image} handleModal={handleModal} />
+          <RecipesSearch
+            key={recipe.recipe.label}
+            label={recipe.recipe.label}
+            image={recipe.recipe.image}
+            origine={recipe.recipe.cuisineType[0]}
+            handleModal={handleModal}
+          />
         ))}
         {dataModal && <RecipeModal recipe={dataModal} close={handClose} />}
       </div>
