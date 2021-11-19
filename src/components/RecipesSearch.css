@@ -49,10 +49,10 @@ p {
 }
 .card-title {
   margin-bottom: 1.5rem;
+  height: 3rem;
 }
 .button-recipes {
   margin-left: 25%;
-  margin-top: 40%;
 }
 .button-recipes {
   background-color: #568259;
@@ -60,4 +60,8 @@ p {
 .button-recipes:hover {
   background-color: #568259;
   transform: scale(1.2);
+}
+.label_recipe {
+  word-break: break-word;
+  margin-bottom: 1rem;
 }

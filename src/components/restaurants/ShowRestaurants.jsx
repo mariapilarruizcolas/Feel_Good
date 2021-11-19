@@ -55,7 +55,14 @@ function ShowRecipes() {
       <div className="restaurants_Search">
         {restaurants &&
           restaurants.map((restaurant) => (
-            <Restaurants key={restaurant.name} name={restaurant.name} image={restaurant.image_url} categories={restaurant.categories} />
+            <Restaurants
+              key={restaurant.name}
+              name={restaurant.name}
+              image={restaurant.image_url}
+              rating={restaurant.rating}
+              location={restaurant.location.display_address[0]}
+              phone={restaurant.display_phone}
+            />
           ))}
       </div>
     </div>
