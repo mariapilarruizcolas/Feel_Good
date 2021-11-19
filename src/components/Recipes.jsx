@@ -1,5 +1,6 @@
 import React from 'react';
 import { useEffect, useState } from 'react/cjs/react.development';
+import axios from 'axios';
 
 import RecipesSearch from './RecipesSearch';
 import RecipeModal from './RecipeModal';
@@ -31,9 +32,8 @@ function Recipes() {
   }, [query]);
 
   const getRecipes = async () => {
-    const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${API_ID}&app_key=${API_KEY}`); // &from=0&to=100  add this on last of line for more recipes
-    const data = await response.json();
-    setRecipes(data.hits);
+    const response = await axios(`https://api.edamam.com/search?q=${query}&app_id=${API_ID}&app_key=${API_KEY}`); // &from=0&to=100  add this on last of line for more recipes
+    setRecipes(response.data.hits);
   };
   const updateSearch = (e) => {
     setSearch(e.target.value);
@@ -47,27 +47,23 @@ function Recipes() {
 
   const getSearchFish = async (e) => {
     setQuery(e.target.value);
-    const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${API_ID}&app_key=${API_KEY}`); // &from=0&to=100  add this on last of line for more recipes
-    const data = await response.json();
-    setRecipes(data.hits);
+    const response = await axios(`https://api.edamam.com/search?q=${query}&app_id=${API_ID}&app_key=${API_KEY}`); // &from=0&to=100  add this on last of line for more recipes
+    setRecipes(response.data.hits);
   };
   const getSearchDiet = async (e) => {
     setQuery(e.target.value);
-    const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${API_ID}&app_key=${API_KEY}`); // &from=0&to=100  add this on last of line for more recipes
-    const data = await response.json();
-    setRecipes(data.hits);
+    const response = await axios(`https://api.edamam.com/search?q=${query}&app_id=${API_ID}&app_key=${API_KEY}`); // &from=0&to=100  add this on last of line for more recipes
+    setRecipes(response.data.hits);
   };
   const getSearchVegi = async (e) => {
     setQuery(e.target.value);
-    const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${API_ID}&app_key=${API_KEY}`); // &from=0&to=100  add this on last of line for more recipes
-    const data = await response.json();
-    setRecipes(data.hits);
+    const response = await axios(`https://api.edamam.com/search?q=${query}&app_id=${API_ID}&app_key=${API_KEY}`); // &from=0&to=100  add this on last of line for more recipes
+    setRecipes(response.data.hits);
   };
   const getSearchProtein = async (e) => {
     setQuery(e.target.value);
-    const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${API_ID}&app_key=${API_KEY}`); // &from=0&to=100  add this on last of line for more recipes
-    const data = await response.json();
-    setRecipes(data.hits);
+    const response = await axios(`https://api.edamam.com/search?q=${query}&app_id=${API_ID}&app_key=${API_KEY}`); // &from=0&to=100  add this on last of line for more recipes
+    setRecipes(response.data.hits);
   };
   return (
     <div className="recipes">
