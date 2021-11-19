@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react/cjs/react.development';
+import axios from 'axios';
 
 import MyIngredientsSearch from './MyIngredientsSearch';
 import RecipeModalTwo from './RecipeModalTwo';
@@ -26,7 +27,7 @@ function MyIngredients() {
   }, [query]);
 
   const getRecipes = async () => {
-    const response = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${query}`);
+    const response = await axios(`https://www.themealdb.com/api/json/v1/1/search.php?s=${query}`);
     const data = await response.json();
     setRecipes(data.meals);
   };
