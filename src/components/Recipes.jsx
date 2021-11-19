@@ -8,12 +8,12 @@ import RecipeModal from './RecipeModal';
 import './Recipes.css';
 
 function Recipes() {
-  const API_ID = '03e0caa6'; //03e0caa6 // 076b5b4e       API ID
-  const API_KEY = 'd5cd0ae20bd99294c54f4916e7073408'; //d5cd0ae20bd99294c54f4916e7073408 // 89dcacb527cb1b9261cd1de41587da7e     API KEY
+  const API_ID = '03e0caa6';
+  const API_KEY = 'd5cd0ae20bd99294c54f4916e7073408';
 
-  const [recipes, setRecipes] = useState([]); // State  upload data from API
-  const [search, setSearch] = useState(''); // State  search bar with state  onChange
-  const [query, setQuery] = useState(''); // State  bar state for user search
+  const [recipes, setRecipes] = useState([]);
+  const [search, setSearch] = useState('');
+  const [query, setQuery] = useState('');
 
   const [dataModal, setDataModal] = useState();
 
@@ -32,7 +32,7 @@ function Recipes() {
   }, [query]);
 
   const getRecipes = async () => {
-    const response = await axios(`https://api.edamam.com/search?q=${query}&app_id=${API_ID}&app_key=${API_KEY}`); // &from=0&to=100  add this on last of line for more recipes
+    const response = await axios(`https://api.edamam.com/search?q=${query}&app_id=${API_ID}&app_key=${API_KEY}`);
     setRecipes(response.data.hits);
   };
   const updateSearch = (e) => {
@@ -40,29 +40,29 @@ function Recipes() {
   };
 
   const getSearch = (e) => {
-    e.preventDefault(); //  for stop refreching with default like everything it's ok  oterwise any writting it will ask request to api
-    setQuery(search); // for validation users  of search bar   form ( onSubmit )
-    setSearch(''); // For reset bar search on bar
+    e.preventDefault();
+    setQuery(search);
+    setSearch('');
   };
 
   const getSearchFish = async (e) => {
     setQuery(e.target.value);
-    const response = await axios(`https://api.edamam.com/search?q=${query}&app_id=${API_ID}&app_key=${API_KEY}`); // &from=0&to=100  add this on last of line for more recipes
+    const response = await axios(`https://api.edamam.com/search?q=${query}&app_id=${API_ID}&app_key=${API_KEY}`);
     setRecipes(response.data.hits);
   };
   const getSearchDiet = async (e) => {
     setQuery(e.target.value);
-    const response = await axios(`https://api.edamam.com/search?q=${query}&app_id=${API_ID}&app_key=${API_KEY}`); // &from=0&to=100  add this on last of line for more recipes
+    const response = await axios(`https://api.edamam.com/search?q=${query}&app_id=${API_ID}&app_key=${API_KEY}`);
     setRecipes(response.data.hits);
   };
   const getSearchVegi = async (e) => {
     setQuery(e.target.value);
-    const response = await axios(`https://api.edamam.com/search?q=${query}&app_id=${API_ID}&app_key=${API_KEY}`); // &from=0&to=100  add this on last of line for more recipes
+    const response = await axios(`https://api.edamam.com/search?q=${query}&app_id=${API_ID}&app_key=${API_KEY}`);
     setRecipes(response.data.hits);
   };
   const getSearchProtein = async (e) => {
     setQuery(e.target.value);
-    const response = await axios(`https://api.edamam.com/search?q=${query}&app_id=${API_ID}&app_key=${API_KEY}`); // &from=0&to=100  add this on last of line for more recipes
+    const response = await axios(`https://api.edamam.com/search?q=${query}&app_id=${API_ID}&app_key=${API_KEY}`);
     setRecipes(response.data.hits);
   };
   return (
