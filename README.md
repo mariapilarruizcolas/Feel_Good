@@ -21,7 +21,7 @@ Project #2 wild code school using API with React Js.
 
 **Bien manger page**
 
-##To run
+## Before starting
 
 
 Before starting, install the dependencies and the pre-commit hooks with :
