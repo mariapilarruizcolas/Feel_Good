@@ -1,10 +1,27 @@
 # Feel Good
 Project #2 wild code school using API with React Js.
-<img src="img/feel_good.png" alt="Texte alternatif" width="400" height="300">
 
- ![HOME PAGE](img/feel_good.png "Home Page")   Home Page
+
+![HOME PAGE](img/feel_good.png "Home Page")   
+
+**Home Page**
+
  
+![BIEN BOUGER PAGE](img/bien_bouger.png "Bien Bouger Page")   
 
+**Bien Bouger page**
+
+
+![BIEN DANS SA TETE PAGE](img/musique.png "Bien dans sa tête Page")   
+
+**Bien dans sa tête page**
+
+
+![BIEN MANGER](img/recettes.png "Bien manger Page")   
+
+**Bien manger page**
+
+##To run
 
 
 Before starting, install the dependencies and the pre-commit hooks with :
