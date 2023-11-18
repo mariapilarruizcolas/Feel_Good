@@ -1,10 +1,9 @@
-# Project 2
+# Feel Good
+Project #2 wild code school using API with React Js.
+ ![ HOME PAGE(img/feel_good.png "Home Page")   Home Page
+ 
 
-bootstrapper CLI for React App with basic conf for Caprover deployment.
 
-It uses [ViteJS](https://vitejs.dev/) ⚡️
-
-## Getting started :pushpin:
 
 Before starting, install the dependencies and the pre-commit hooks with :
 
